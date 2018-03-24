@@ -2,7 +2,18 @@ if (typeof $.cj == 'undefined') $.cj = {};
 
 $.cj.menuHandler = {
 
+    header : '.header',
+
     onResize : function () {
+
+        var width = $(window).width();
+
+        if(width < 1099){
+            $($.cj.menuHandler.header).css('position', 'fixed')
+        } else{
+            $($.cj.menuHandler.header).css('position', 'absolute')
+        }
+
         $(".menu-control").removeClass('active')
             .removeClass('internal')
             .addClass('external');
@@ -13,6 +24,13 @@ $.cj.menuHandler = {
     },
 
     init : function () {
+        var width = $(window).width();
+
+        if(width < 1099){
+            $($.cj.menuHandler.header).css('position', 'fixed')
+        } else{
+            $($.cj.menuHandler.header).css('position', 'absolute')
+        }
 
         $(".menu-control").on('click', function () {
 

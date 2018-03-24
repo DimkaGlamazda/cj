@@ -24,6 +24,8 @@
     text-align: center;
     justify-content: center;
     padding-top:15px;
+    padding-bottom: 15px;
+    width: 240px;
 }
 .social-links a{
     display: inline-block;
