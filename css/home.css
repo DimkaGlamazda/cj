@@ -24,7 +24,6 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-    line-height: 1;
     background-color: #FAFAFA !important;
 }
 ol, ul {
@@ -164,26 +163,15 @@ table {
     width: 100%;
     font-family: 'Helvetica Neue Cyr Bold';
     font-size: 30px;
+    line-height: 30px;
     text-align: center;
 }
 
 @media all and (min-width: 999px) {
     .home-title h1 {
         font-size: 60px;
-        text-align: left;
-        margin-top: 15%;
-    }
-
-    .home-title-content {
-        display: block;
-    }
-
-    .home-title-bg {
-        display: block;
-    }
-
-    #particles-js {
-        margin-top: 10%;
+        line-height: 60px;
+        text-align: center;
     }
 }
 
