@@ -16,11 +16,7 @@
     opacity: 0.5;
     font-family: 'Helvetica Neue Cyr Bold';
 }
-.footer-connect-us:hover{
-    text-decoration: none;
-    color: #fff;
-    opacity: 1;
-}
+
 @media all and (min-width: 1400px){
     .footer-container {
         width: 1400px;
@@ -32,8 +28,7 @@
     margin-bottom: 15px;
     color:#fff;
     text-align: center;
-    font-family: 'Helvetica Neue Cyr Bold';
-    opacity: 0.5;
+    opacity: 0.1;
 }
 .social-links{
     display: flex;
@@ -51,32 +46,37 @@
 }
 
 .twitter-icon{
-    background: url('../img/twitter.png') 100% 100%;
+    background: #000 url('../img/twitter-active.png') 100% 100%;
+    opacity: .4;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 .twitter-icon:hover{
     background: url('../img/twitter-active.png') 100% 100%;
+    opacity: 1;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 .telegram-icon{
-  background: url('../img/telegram.png') 100% 100%;
+  background: #000 url('../img/telegram-active.png') 100% 100%;
+  opacity: .4;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
 .telegram-icon:hover{
     background: url('../img/telegram-active.png') 100% 100%;
+    opacity: 1;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .fb-icon{
-  background: url('../img/fb-icon.png') 100% 100%;
+  background: #000 url('../img/facebook-active.png') 100% 100%;
+  opacity: .4;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -84,18 +84,21 @@
 }
 .fb-icon:hover{
     background: url('../img/facebook-active.png') 100% 100%;
+    opacity: 1;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 .youtube-icon{
-  background: url('../img/ytube.png') 100% 100%;
+  background: #000 url('../img/youtube-active.png') 100% 100%;
+  opacity: .4;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
 .youtube-icon:hover{
     background: url('../img/youtube-active.png') 100% 100%;
+    opacity: 1;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;

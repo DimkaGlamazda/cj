@@ -8,7 +8,7 @@
 	left:0;
 	right: 0;
 	height: 70px;
-	background-color: #fff;
+	background-color: #FAFAFA ;
 }
 
 .header-container{
@@ -65,9 +65,6 @@
 	background-color: transparent;
 }
 
-.menu-control:focus {
-	outline: none;
-}
 .menu-control span {
 	display: block;
 	position: absolute;
@@ -127,6 +124,9 @@
 	-webkit-transition-property: bottom, -webkit-transform;
 	transition-property: bottom, transform;
 }
+.menu-control:focus {
+	outline: none;
+}
 .menu-control.active span {
 	background: none;
 }
@@ -148,6 +148,10 @@
 	transition-delay: 0, 0.3s;
 }
 
+.header-controls{
+	display: none;
+}
+
 @media all and (min-width: 1099px){
 
 	.header{
@@ -155,77 +159,112 @@
 	}
 
 	.logo{
-		width: 300px;
+		width: 250px;
 		margin-left: 5%;
 	}
 
 	.header-controls{
 		display: flex;
+		position: relative;
 		margin-right: 5%;
 		justify-content: space-between;
 		-webkit-transition-delay: 0, 0.3s;
 		transition-delay: 0, 0.3s;
 	}
 	.header-languages{
-		display: flex;
-		height: 100px;
-		width: 100px;
-		align-items: center;
+		visibility: hidden;
+		position: absolute;
+		bottom: -84px;
+		padding-top: 20px;
+		right: 0;
+		flex-direction: column;
 		background-color: #000;
-		clear: both;
-		padding: 0;
-		margin: 0;
+		width: 100px;
 	}
 
-	.header-languages li{
-		display: inline-block;
-		text-decoration: none;
-		width: 50px;
-		text-align: center;
-	}
 	.header-languages li a span{
-		font-size: 17px;
+		font-size: 14px;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #fff;
 		text-decoration: none;
 	}
 	.header-languages li a{
-		margin-left: 4px;
 		display: block;
 		text-decoration: none;
 		text-align: center;
+		padding-bottom: 10px;
 	}
-	.header-languages li a.actve-lang-nav-bar{
+
+	.header-lang-btn{
+		display: flex;
+		height: 100px;
+		width: 100px;
+		align-items: center;
+		justify-content: space-around;
+		background-color: #000;
+		clear: both;
+		padding: 0;
+		margin: 0;
+		z-index: 2;
+	}
+	.header-languages{
+		display: flex;
+		visibility: hidden;
+		z-index: 1;
+	}
+
+	.current-lang{
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 600;
+	}
+
+
+	.header-lang-btn:hover + .header-languages{
+		visibility: visible ;  
+
+	}
+	
+	.header-languages:hover{
+		visibility: visible;
+	}
+	
+	.active-nav-item{
+		border-bottom: 4px #e30808 solid;
+	}
+
+	.lang-icon{
 		font-size: 0;
 		height: 17px;
 		width: 17px;
 		background: url('../img/earth-icon.png') center center no-repeat;
 		background-size: cover;
 	}
-	.header-languages li a.actve-lang-nav-bar span{
-		visibility: hidden;
+
+	.header-lang-btn:hover + .header-languages{
+		visibility: visible;
 	}
+
 	.menu-control{
 		display: none;
 	}
-
 
 	.header-controls-title{
 		display:none;
 	}
 
-	.header-navigation{
-		height: 100px;
+	.header-navigation a{
+		padding-bottom: 7px;
 	}
 
 	.header-navigation ul{
-		margin: 0 20px 0 0;
+		margin: 0 10px 0 0;
 	}
 	.header-navigation li{
 		display: inline-block;
-		line-height: 100px;
-		margin-left: 20px;
+		margin-top: 36px;
+		margin-left: 10px;
 	}
 	.header-navigation li a {
 		color: #000;

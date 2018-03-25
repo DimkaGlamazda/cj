@@ -139,11 +139,10 @@ table {
     width: 100%;
     display: flex;
     align-items: center;
-    z-index: 3;
 }
 
-#particles-js {
-    height: 150px;
+#js-background-renderer {
+    height: 400px;
     width: 100%;
 }
 
@@ -155,7 +154,6 @@ table {
     width: 100%;
     display: flex;
     align-items: center;
-    z-index: 1;
 }
 
 .home-title h1 {
@@ -165,6 +163,7 @@ table {
     font-size: 30px;
     line-height: 30px;
     text-align: center;
+    z-index: 4;
 }
 
 @media all and (min-width: 999px) {
@@ -180,7 +179,6 @@ table {
 }
 
 .section-header {
-    text-transform: capitalize;
     padding-left: 10px;
     margin-bottom: 20px;
     font-size: 20px;
@@ -216,9 +214,12 @@ table {
 .about-us-slider {
     position: relative;
 }
+.carousel-item{
+    overflow: hidden;
+}
 
 .about-us-content {
-    padding-top: 10%;
+    padding-top: 15%;
 }
 .about-us-content p{
     font-size: 16px;
@@ -365,8 +366,7 @@ table {
 
 .news-item-header {
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: center;
     padding-bottom: 10px;
 }
 .news-category-label{
@@ -414,7 +414,7 @@ table {
 
     .news-item-header {
         width: 35%;
-        align-items: start;
+        align-items: center;
     }
     .news-category-label{
         width: 50%;
@@ -480,12 +480,13 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 0;
+    height: 116px;
+    margin-top: 60px;
 }
 
 .partner-item img {
     display: inline-block;
-    width: 75%;
+    width: 270px;
 }
 
 @media all and (min-width: 999px) {
