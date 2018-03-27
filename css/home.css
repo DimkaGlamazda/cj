@@ -159,6 +159,7 @@ table {
 .home-title h1 {
     height: 25%;
     width: 100%;
+
     font-family: 'Helvetica Neue Cyr Bold';
     font-size: 30px;
     line-height: 30px;
@@ -171,6 +172,7 @@ table {
         font-size: 60px;
         line-height: 60px;
         text-align: center;
+        margin-top: -40px;
     }
 }
 
@@ -227,7 +229,7 @@ table {
 }
 
 .about-us-content .section-header {
-    margin-bottom: 10%;
+    margin-bottom: 50px;
 }
 
 .slide-controls-box {
@@ -367,7 +369,6 @@ table {
 .news-item-header {
     display: flex;
     justify-content: center;
-    padding-bottom: 10px;
 }
 .news-category-label{
     height: 36px;
@@ -396,11 +397,13 @@ table {
 
 .news-title {
     font-size: 15px;
+    line-height: 36px;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 0;
 }
 
-.news-description {
-    font-size: 12px;
-}
+
 
 @media all and (min-width: 720px) {
     .news-items{
@@ -438,10 +441,7 @@ table {
     .news-item-body {
         width: 65%;
     }
-    .news-description{
-        font-size: 16px;
-        line-height: 21px;
-    }
+
 }
 
 
@@ -465,12 +465,35 @@ table {
     width: 10%;
     margin: 5%;
 }
-
-.partners-next-container img,
-.partners-prev-container img {
-    width: 100%;
+.partners-next,
+.partners-prev{
+    width: 51px;
+    height: 107px;
+    background-repeat: no-repeat;
+     -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
     cursor: pointer;
 }
+
+.partners-prev{
+    background: url("../img/partners-prev.png");
+    opacity: 0.1;
+}
+.partners-prev:hover{
+   background: url("../img/partners-prev.png");
+   opacity: 0.4;
+}
+.partners-next{
+ background: url("../img/partners-next.png");
+ opacity: 0.1;
+}
+.partners-next:hover{
+    background: url("../img/partners-next.png");
+    opacity: 0.5;
+}
+
 
 .owl-carousel {
     width: 60%;
@@ -480,7 +503,7 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 116px;
+    height: 176px;
     margin-top: 60px;
 }
 
