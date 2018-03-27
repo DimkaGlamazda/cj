@@ -11,12 +11,10 @@ $.cj.Particles = {
     colors: [
         'rgba(161,147,202,1)',
         'rgba(59,72,164,1)',
-        'rgba(59,158,164,1)',
+        'rgba(59,158,164,1)'
     ],
 
     init: function (n, f) {
-
-
 
         this.x = 0,
             this.y = 100,
@@ -37,7 +35,17 @@ $.cj.Particles = {
         this.onResize();
         this.points = [];
 
-        for (var i = 0; i < n; i++) {
+        var count = n;
+
+        if(is_mobile_width){
+            count = 70;
+        }else if(is_pad_width){
+            count = 100;
+        } else{
+            count = 120;
+        }
+
+        for (var i = 0; i < count; i++) {
 
             if (f) {
                 var x = this.canvas.width * Math.random();
@@ -69,10 +77,7 @@ $.cj.Particles = {
         }
         ;
 
-
-
         this.ready = true;
-
     },
 
     fixRatio: function () {
@@ -94,8 +99,10 @@ $.cj.Particles = {
 
         var w = windowWidth;
         var h = windowHeight;
-        this.canvas.width = w * this.ratio;
-        this.canvas.height = h * this.ratio;
+
+        this.canvas.width  = w*this.ratio;
+        this.canvas.height = h*this.ratio;
+
         $('#js-background-renderer').css({
             'width': w,
             'height': h
@@ -106,7 +113,17 @@ $.cj.Particles = {
 
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-        for (var i = 0; i < this.points.length; ++i) {
+        var count = this.points.length;
+
+        if(is_mobile_width){
+            count = 40;
+        }else if(is_pad_width){
+            count = 70;
+        } else{
+            count = 120;
+        }
+
+        for (var i = 0; i < count; ++i) {
 
             var p = this.points[i];
 
@@ -115,7 +132,6 @@ $.cj.Particles = {
             } else {
                 p.deg = 0;
             }
-
 
             var wave = Math.sin(p.deg * (Math.PI / 180));
             p.ox = p.ox + p.vx;
@@ -147,7 +163,7 @@ $.cj.Particles = {
                 p.oy = p.y = this.canvas.height / 2 + this.y * Math.random() - this.y / 2;
             }
 
-            for (var n = 0; n < this.points.length; n++) {
+            for (var n = 0; n < count; n++) {
 
                 var pn = this.points[n];
                 var nx = p.x - this.points[n].x;
