@@ -27,6 +27,19 @@ var is_desktop_width = true;
 var windowWidth = $(window).width();
 var windowHeight = $(window).height();
 
+if( windowWidth < 680 ){
+    is_mobile_width  = true;
+    is_pad_width     = false;
+    is_desktop_width = false;
+} else if( windowWidth < 1024 ){
+    is_pad_width     = true;
+    is_mobile_width  = false;
+    is_desktop_width = false;
+} else {
+    is_desktop_width = true;
+    is_pad_width     = false;
+    is_mobile_width  = false;
+}
 
 $(window).resize( function () {
     windowWidth = $(window).width();
@@ -55,9 +68,8 @@ $(window).resize( function () {
 
 $(function () {
 
-
     $.cj.preloader.init();
-	$.cj.Particles.init(120,true);
+	$.cj.Particles.init(120, true);
     render();
     $.cj.owlCarousel.init();
     $.cj.homeTitleFix.init();
