@@ -172,14 +172,15 @@
 		transition-delay: 0, 0.3s;
 	}
 	.header-languages{
-		visibility: hidden;
+		display: none;
 		position: absolute;
-		bottom: -84px;
+		top: 100px;
 		padding-top: 20px;
 		right: 0;
 		flex-direction: column;
 		background-color: #000;
 		width: 100px;
+		z-index: 1;
 	}
 
 	.header-languages li a span{
@@ -207,15 +208,12 @@
 		padding: 0;
 		margin: 0;
 		z-index: 2;
+		cursor: pointer;
 	}
 	.lang-icon{
 		margin-left: 10px;
 	}
-	.header-languages{
-		display: flex;
-		visibility: hidden;
-		z-index: 1;
-	}
+
 
 	.current-lang{
 		text-transform: uppercase;
@@ -223,15 +221,6 @@
 		font-weight: 600;
 	}
 
-
-	.header-lang-btn:hover + .header-languages{
-		visibility: visible ;  
-
-	}
-	
-	.header-languages:hover{
-		visibility: visible;
-	}
 	
 	.active-nav-item{
 		border-bottom: 4px #e30808 solid;
@@ -245,9 +234,6 @@
 		background-size: cover;
 	}
 
-	.header-lang-btn:hover + .header-languages{
-		visibility: visible;
-	}
 
 	.menu-control{
 		display: none;
@@ -279,6 +265,9 @@
 	.logo{
 		display: inline-block;
 		width: 30%;
+	}
+	.header-languages{
+		display: block !important;
 	}
 
 	.header-controls{
