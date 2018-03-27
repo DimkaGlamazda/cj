@@ -234,7 +234,6 @@
 		background-size: cover;
 	}
 
-
 	.menu-control{
 		display: none;
 	}
@@ -327,4 +326,26 @@
 		text-decoration: none;
 		color: #fff;
 	}
+}
+
+.go-to-top{
+	display: none;
+	background-color: #000;
+	position: fixed;
+	right: 14%;
+	top: 20px;
+	padding: 20px;
+	z-index: 999;
+	cursor: pointer;
+}
+.go-to-top img{
+	height:29px;
+}
+
+
+@media all and (max-width: 1098px){
+	.go-to-top{
+		display: none !important;
+	}
+
 }

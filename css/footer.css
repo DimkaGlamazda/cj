@@ -110,3 +110,24 @@
         display: none;
     }
 }
+
+.footer-go-to-top{
+    display: none !important;
+    position: absolute;
+    right: 20px;
+    width: 50px;
+    height: 29px;
+    padding-top:32px;
+    cursor: pointer;
+}
+.footer-go-to-top img{
+    height:29px;
+}
+
+
+@media all and (max-width: 1098px){
+    .footer-go-to-top{
+        display: block !important;
+    }
+
+}

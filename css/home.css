@@ -64,7 +64,7 @@ table {
 
 .cj-btn span {
     display: block;
-    width: 92px;
+    width: 112px;
     height: 32px;
     color: #000;
     background-color: #fff;
@@ -95,7 +95,7 @@ table {
     justify-content: center;
     text-decoration: none;
     height: 40px;
-    width: 100px;
+    width: 120px;
     border-radius: 35px;
     background: rgba(176, 0, 11, 1);
     background: -moz-linear-gradient(left, rgba(176, 0, 11, 1) 0%, rgba(246, 41, 12, 1) 100%);
