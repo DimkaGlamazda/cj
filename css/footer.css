@@ -11,7 +11,7 @@
 .footer-connect-us{
     display: inline-block;
     margin-top: 15px;
-    font-size: 33px;
+    font-size: 25px;
     color: #fff;
     opacity: 0.5;
     font-family: 'Helvetica Neue Cyr Bold';
@@ -28,7 +28,7 @@
     margin-bottom: 15px;
     color:#fff;
     text-align: center;
-    opacity: 0.1;
+    opacity: 0.4;
 }
 .social-links{
     display: flex;
