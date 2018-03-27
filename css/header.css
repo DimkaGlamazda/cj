@@ -332,7 +332,7 @@
 	display: none;
 	background-color: #000;
 	position: fixed;
-	right: 14%;
+	right: 20px;
 	top: 20px;
 	padding: 20px;
 	z-index: 999;
