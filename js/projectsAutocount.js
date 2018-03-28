@@ -13,7 +13,7 @@ $.cj.projectsAutocount = {
 
 		if(w_top + 600 >= e_top)
 		{
-			$(this.fields).spincrement({duration : 3000});
+			$(this.fields).spincrement({duration : 3000, decimalPlaces : null, thousandSeparator : null});
 		}
 	}
 };

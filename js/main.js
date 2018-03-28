@@ -76,8 +76,10 @@ $(function () {
     $.cj.menuHandler.init();
     $.cj.goToTop.init();
 
+
     $(window).on('scroll', function(){
       $.cj.projectsAutocount.init();
+      $.cj.cssAnimate.init();
       $.cj.menuHandler.onScroll();
 	});
 

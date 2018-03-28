@@ -43,14 +43,15 @@
     margin-right: 12px;
     width: 33px;
     height: 33px;
+        background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .twitter-icon{
     background: #000 url('../img/twitter-active.png') 100% 100%;
     opacity: .4;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+
 }
 .twitter-icon:hover{
     background: url('../img/twitter-active.png') 100% 100%;
@@ -62,9 +63,7 @@
 .telegram-icon{
   background: #000 url('../img/telegram-active.png') 100% 100%;
   opacity: .4;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
+
 }
 .telegram-icon:hover{
     background: url('../img/telegram-active.png') 100% 100%;
@@ -77,9 +76,6 @@
 .fb-icon{
   background: #000 url('../img/facebook-active.png') 100% 100%;
   opacity: .4;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
 
 }
 .fb-icon:hover{
@@ -92,9 +88,6 @@
 .youtube-icon{
   background: #000 url('../img/youtube-active.png') 100% 100%;
   opacity: .4;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
 }
 .youtube-icon:hover{
     background: url('../img/youtube-active.png') 100% 100%;
@@ -114,7 +107,7 @@
 .footer-go-to-top{
     display: none !important;
     position: absolute;
-    right: 20px;
+    right: 10px;
     width: 50px;
     height: 29px;
     padding-top:32px;

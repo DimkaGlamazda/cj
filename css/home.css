@@ -156,23 +156,45 @@ table {
     align-items: center;
 }
 
+.home-title-content .cj-container{
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    padding-right:0;
+}
+
 .home-title h1 {
     height: 25%;
     width: 100%;
-
     font-family: 'Helvetica Neue Cyr Bold';
     font-size: 30px;
     line-height: 30px;
     text-align: center;
     z-index: 4;
+    -webkit-transition:  all 0.3s;
+    -moz-transition:  all 0.3s;
+    -o-transition:  all 0.3s;
+    transition:  all 0.3s;
 }
 
 @media all and (min-width: 999px) {
+
     .home-title h1 {
-        font-size: 60px;
-        line-height: 60px;
-        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: left;
         margin-top: -40px;
+    }
+}
+
+@media all and (min-width: 1300px){
+    .home-title h1 {
+        font-size: 50px;
+        line-height: 50px;
+        text-align: center;
     }
 }
 
@@ -180,6 +202,69 @@ table {
     display: block;
 }
 
+.icon-scroll {
+    position: absolute;
+    width: 40px;
+    bottom: 10%;
+    height: 70px;
+    z-index:5;
+}
+
+.icon-scroll a{
+    padding-top: 80px;
+}
+.icon-scroll a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb 2s infinite;
+    animation: sdb 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+}
+.icon-scroll a span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+.icon-scroll a span:nth-of-type(2) {
+    top: 16px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+}
+.icon-scroll span:nth-of-type(3) {
+    top: 32px;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+@-webkit-keyframes sdb {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes sdb {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 .section-header {
     padding-left: 10px;
     margin-bottom: 20px;
@@ -272,6 +357,21 @@ table {
     line-height: 80px;
     margin-bottom: 0;
 }
+.partner-number-description{
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.success-ico-color{
+    color: rgba(176, 0, 11, 1);
+    color: -moz-linear-gradient(left, rgba(176, 0, 11, 1) 0%, rgba(246, 41, 12, 1) 100%);
+    color: -webkit-linear-gradient(left, rgba(176, 0, 11, 1) 0%, rgba(246, 41, 12, 1) 100%);
+    color: -o-linear-gradient(left, rgba(176, 0, 11, 1) 0%, rgba(246, 41, 12, 1) 100%);
+    color: -ms-linear-gradient(left, rgba(176, 0, 11, 1) 0%, rgba(246, 41, 12, 1) 100%);
+    color: linear-gradient(to right, rgba(176, 0, 11, 1) 0%, rgba(246, 41, 12, 1) 100%);
+    color: -webkit-gradient(left top, right top, color-stop(0%, rgba(176, 0, 11, 1)), color-stop(100%, rgba(246, 41, 12, 1)));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b0000b', endColorstr='#f6290c', GradientType=1);
+}
 
 @media all and (min-width: 999px) {
     .project-item-middle {
@@ -296,6 +396,7 @@ table {
 }
 
 @media all and (min-width: 720px) {
+
     .home-projects .section-header {
         margin-bottom: 60px;
     }
@@ -337,7 +438,7 @@ table {
         display: flex;
         flex-direction: column;
         border-top: none;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
 
     .project-item:last-child {
@@ -355,6 +456,11 @@ table {
         height: 90px;
         line-height: 90px;
         text-align: center;
+    }
+    .partner-number-description{
+        font-size: 38px;
+        display: block;
+
     }
 }
 

@@ -6,6 +6,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/lib/owl.carousel.min.css">
     <link rel="stylesheet" href="css/lib/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/lib/animate.min.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -27,7 +28,6 @@
     <script type="text/javascript" src="js/goToTop.js"></script>
 </head>
 <body>
-
 
 <header class="header">
     <div class="header-container">
@@ -73,33 +73,36 @@
     </div>
     <div class="home-title-content">
         <div class="cj-container">
-            <h1>
+            <h1 data-css-animate="trigger">
                 <span>ICO Consulting and</span>
                 <span>Blockchain Technologies</span>
             </h1>
+            <div class='icon-scroll' data-go-to-top="btn-down">
+                <a href="#"><span></span><span></span><span></span></a>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="home-about-us">
+<section class="home-about-us" data-go-to-top="down-destination">
     <div class="cj-container">
         <div class="row">
             <div class="col-sm-12 col-md-6">
                 <div class="about-us-content">
-                    <h2 class="section-header">We are CoinJapan</h2>
-                    <p>Coinjapan is a reliable partner to attract Japanese investments via ICO. The world's largest
+                    <h2 class="section-header" data-css-animate="trigger">We are CoinJapan</h2>
+                    <p data-css-animate="trigger">Coinjapan is a reliable partner to attract Japanese investments via ICO. The world's largest
                         cryptocurrency market with proactive investors, who willingly invest in innovative projects and
                         the future tech, is open only to those who "speak" with it understandable language. Coinjapan
                         will pave the way to the Japanese investment market for your company, with further providing of
                         successful ICO for the rapid development of the project.</p>
                     <div class="row">
                         <div class="col-sm-12 col-md-6 offset-md-6">
-                            <a href="#" class="cj-btn"><span>Read more</span></a>
+                            <a href="#" class="cj-btn" data-css-animate="trigger"><span>Read more</span></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-6" data-css-animate="trigger">
                 <div class="about-us-slider">
                     <div id="mainSlider" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
@@ -138,46 +141,43 @@
         </div>
     </div>
 </section>
-
-
 <section class="home-projects">
     <div class="cj-container">
-        <h2 class="section-header">Projects</h2>
-        <div class="project-items">
+        <h2 class="section-header" data-css-animate="trigger">Projects</h2>
+        <div class="project-items" data-css-animate="trigger">
             <div class="row" data-projectsAutocount="container">
                 <div class="col-sm-12 col-md-4">
                     <div class="project-item">
                         <h3>Successful ICOs</h3>
-                        <p data-projectsAutocount="field" data-from="7" data-to="46">0</p>
+                        <p><span class="success-ico-color" data-projectsAutocount="field" data-from="7" data-to="15"></span></p>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <div class="project-item project-item-middle">
                         <h3>Collected funds</h3>
-                        <p data-projectsAutocount="field" data-from="5" data-to="32">0</p>
+                        <p>$ <span data-projectsAutocount="field" data-from="7" data-to="15">0</span><span class="partner-number-description">Million</span></p>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <div class="project-item">
                         <h3>Attracted investors</h3>
-                        <p data-projectsAutocount="field" data-from="3" data-to="24">0</p>
+                        <p data-projectsAutocount="field" data-from="2500" data-to="3000">0</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-4 offset-md-8">
-                <a href="#" class="cj-btn"><span>Read more</span></a>
+                <a href="#" class="cj-btn" data-css-animate="trigger"><span>Read more</span></a>
             </div>
         </div>
     </div>
 </section>
-
 <section class="home-news">
     <div class="cj-container">
-        <h2 class="section-header">News</h2>
+        <h2 class="section-header" data-css-animate="trigger">News</h2>
         <div class="news-items">
-            <div class="news-item">
+            <div class="news-item" data-css-animate="trigger">
                 <div class="news-item-header">
                     <div class="news-category-label">
                         <span style="background-color: #944d92;">Our News</span>
@@ -190,7 +190,7 @@
                     <h4 class="news-title">Id diam maecenas ultricies mi eget mauris.</h4>
                 </div>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-css-animate="trigger">
                 <div class="news-item-header">
                     <div class="news-category-label">
                         <span style="background-color: #97c15e;">Clients ISO</span>
@@ -203,7 +203,7 @@
                     <h4 class="news-title">Id diam maecenas ultricies mi eget mauris.</h4>
                 </div>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-css-animate="trigger">
                 <div class="news-item-header">
                     <div class="news-category-label">
                         <span style="background-color: #f95959;">Japan</span>
@@ -216,7 +216,7 @@
                     <h4 class="news-title">Id diam maecenas ultricies mi eget mauris.</h4>
                 </div>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-css-animate="trigger">
                 <div class="news-item-header">
                     <div class="news-category-label">
                         <span style="background-color: #944d92;">Our News</span>
@@ -230,7 +230,7 @@
                 </div>
             </div>
 
-            <div class="news-item">
+            <div class="news-item" data-css-animate="trigger">
                 <div class="news-item-header">
                     <div class="news-category-label">
                         <span style="background-color: #688cc2;">World</span>
@@ -246,7 +246,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-4 offset-md-8">
-                <a href="#" class="cj-btn"><span>Read more</span></a>
+                <a href="#" class="cj-btn" data-css-animate="trigger"><span>Read more</span></a>
             </div>
         </div>
     </div>
@@ -254,9 +254,9 @@
 
 <section class="home-partners">
     <div class="cj-container">
-        <h2 class="section-header">Partners</h2>
+        <h2 class="section-header" data-css-animate="trigger">Partners</h2>
 
-        <div class="partners-carousel-container">
+        <div class="partners-carousel-container" data-css-animate="trigger">
             <div class="partners-next-container">
                 <div class="partners-prev"></div>
             </div>
