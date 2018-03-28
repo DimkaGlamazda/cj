@@ -9,7 +9,8 @@ $.cj.preloader = {
 		$(this.block).css('height', $(window).height());
 
 		setTimeout(function() {
-	        $($.cj.preloader.block).fadeOut('slow');
-	    }, this.time);
+	        $($.cj.preloader.block).fadeOut('fast');
+            $.cj.cssAnimate.init();
+	    });
 	}
 };

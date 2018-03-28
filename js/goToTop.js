@@ -3,9 +3,12 @@ if (typeof $.cj == 'undefined') $.cj = {};
 $.cj.goToTop = {
 
     trigger : '[data-go-to-top="btn"]',
+    triggerDown : '[data-go-to-top="btn-down"]',
+    downDestination : '[data-go-to-top=down-destination]',
 
     init : function () {
         $(document).on('click', this.trigger, this.go);
+        $(document).on('click', this.triggerDown, this.goDown);
 
         $(window).on('scroll', this.onScroll);
     },
@@ -23,6 +26,12 @@ $.cj.goToTop = {
 
     go : function () {
         $('html, body').animate({scrollTop: 0},500);
+        return false;
+    },
+
+    goDown : function () {
+        var destination = $($.cj.goToTop.downDestination).offset().top;
+        $('html, body').animate({scrollTop: destination},500);
         return false;
     }
 };
