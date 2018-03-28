@@ -8,11 +8,10 @@ $.cj.projectsAutocount = {
 
 	init : function () {
 
-		var w_top = $(window).scrollTop();
+		var w_top = $(window).scrollTop() + $(window).height();
 		var e_top = $(this.triggerContainer).offset().top;
 
-		if(w_top + 600 >= e_top)
-		{
+		if(w_top >= e_top) {
 			$(this.fields).spincrement({duration : 3000, decimalPlaces : null, thousandSeparator : null});
 		}
 	}
