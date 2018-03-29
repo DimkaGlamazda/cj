@@ -26,6 +26,7 @@
 	}
 }
 
+
 .logo{
 	margin-left: 20px;
 }
@@ -176,6 +177,7 @@
 		position: absolute;
 		top: 100px;
 		padding-top: 20px;
+		height:74px;
 		right: 0;
 		flex-direction: column;
 		background-color: #000;
@@ -194,7 +196,6 @@
 		display: block;
 		text-decoration: none;
 		text-align: center;
-		padding-bottom: 10px;
 	}
 
 	.header-lang-btn{
@@ -332,14 +333,17 @@
 	display: none;
 	background-color: #000;
 	position: fixed;
-	right: 20px;
-	top: 20px;
-	padding: 20px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
 	z-index: 999;
 	cursor: pointer;
+	text-align: center;
 }
+
 .go-to-top img{
-	height:29px;
+	margin-top: 22px;
+	height: 15px;
 }
 
 
