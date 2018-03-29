@@ -1,12 +1,11 @@
-.footer{
-    background-color: #000;
-}
+
 .footer-container{
     height: inherit;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #000;
 }
 .footer-connect-us{
     display: inline-block;

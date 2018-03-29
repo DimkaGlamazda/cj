@@ -97,6 +97,7 @@ $.cj.Particles = {
 
     onResize: function () {
 
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         var w = windowWidth;
         var h = windowHeight;
 

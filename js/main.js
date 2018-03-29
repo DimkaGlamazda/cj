@@ -62,6 +62,8 @@ $(window).resize( function () {
     $.cj.homeTitleFix.onResize();
     $.cj.menuHandler.onResize();
     $.cj.Particles.onResize();
+    $.cj.goToTop.onResize();
+
 
 });
 

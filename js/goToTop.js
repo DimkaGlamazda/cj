@@ -11,6 +11,7 @@ $.cj.goToTop = {
         $(document).on('click', this.triggerDown, this.goDown);
 
         $(window).on('scroll', this.onScroll);
+        $.cj.goToTop.onResize();
     },
 
     onScroll : function () {
@@ -22,6 +23,14 @@ $.cj.goToTop = {
         } else {
             $($.cj.goToTop.trigger).slideUp();
         }
+    },
+
+    onResize : function () {
+       var elem = $($.cj.goToTop.trigger);
+       var parent = elem.parent();
+       var right = parent.offset().left;
+       elem.css('right', right + 10);
+
     },
 
     go : function () {
