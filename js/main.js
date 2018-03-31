@@ -77,6 +77,7 @@ $(function () {
     $.cj.homeTitleFix.init();
     $.cj.menuHandler.init();
     $.cj.goToTop.init();
+    $.cj.projectsAutocount.init();
 
 
     $(window).on('scroll', function(){
