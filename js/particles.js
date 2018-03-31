@@ -42,7 +42,7 @@ $.cj.Particles = {
         }else if(is_pad_width){
             count = 100;
         } else{
-            count = 120;
+            count = 150;
         }
 
         for (var i = 0; i < count; i++) {
