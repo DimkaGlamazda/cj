@@ -166,7 +166,7 @@ table {
     align-items: center;
     position: relative;
     justify-content: center;
-    padding-right: 0;
+    padding-left: 0;
 }
 
 .home-title h1 {
@@ -264,6 +264,7 @@ table {
 }
 
 @media only screen and (max-device-width: 768px) {
+
     .icon-scroll {
         height: 60px;
         border-radius: 4px;
@@ -302,6 +303,7 @@ table {
             transform: translateY(-46px);
         }
     }
+
     @keyframes scroll {
         0% {
             opacity: 1;
@@ -312,6 +314,7 @@ table {
             transform: translateY(-46px);
         }
     }
+
 }
 
 .section-header {
@@ -329,6 +332,7 @@ table {
     font-family: 'HELVETICAMEDIUM';
     font-weight: 500;
     font-size: 17px;
+    text-align: justify;
 }
 
 .about-us-slider-prev img,
@@ -482,7 +486,7 @@ table {
 
     .project-items {
         width: 90%;
-        margin: auto;
+        margin-left: 1%;
     }
 
     .project-item {
