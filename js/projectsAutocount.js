@@ -6,13 +6,19 @@ $.cj.projectsAutocount = {
 	
 	fields : '[data-projectsAutocount=field]',
 
+	flag : true,
+
 	init : function () {
+	
 
-		var w_top = $(window).scrollTop() + $(window).height();
-		var e_top = $(this.triggerContainer).offset().top;
+		if($.cj.projectsAutocount.flag){
+			var w_top = $(window).scrollTop() + $(window).height();
+			var e_top = $(this.triggerContainer).offset().top;
 
-		if(w_top >= e_top) {
-			$(this.fields).spincrement({duration : 3000, decimalPlaces : null, thousandSeparator : null});
+			if(w_top >= e_top) {
+				$(this.fields).spincrement({duration : 3000, decimalPlaces : null, thousandSeparator : null});
+				$.cj.projectsAutocount.flag = false;
+			}
 		}
 	}
 };
