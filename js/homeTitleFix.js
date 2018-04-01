@@ -10,23 +10,16 @@ $.cj.homeTitleFix = {
         var height = $(window).height();
 
 
-
-        if(width > 400 && height > 500){
-            $($.cj.homeTitleFix.container).css('height', $(window).height());
-        } else {
-            $($.cj.homeTitleFix.container).css('height', 500);
-        }
+        $($.cj.homeTitleFix.container).css('height', $(window).height());
+     
     },
 
     init : function () {
         var width = $(window).width();
         var height = $(window).height();
 
-        if(width > 400 && height > 500){
-            $($.cj.homeTitleFix.container).css('height', $(window).height());
-        }  else {
-            $($.cj.homeTitleFix.container).css('height', 500);
-        }
+        $($.cj.homeTitleFix.container).css('height', $(window).height());
+
     }
 };
 
