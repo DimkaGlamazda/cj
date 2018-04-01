@@ -1,0 +1,6 @@
+.about-title{
+	height: 250px;
+	width: 100%;
+	background-image: url('../img/mask.png');
+	background-size:cover; 
+}

@@ -75,16 +75,10 @@ table {
 
 .cj-btn-container {
     width: 100%;
-    padding-left: 5%;
     display: flex;
     justify-content: center;
 }
 
-@media all and (min-width: 1026px) {
-    .cj-btn-container {
-        justify-content: flex-end;
-    }
-}
 
 .cj-btn {
     margin: 30px 0;
@@ -199,7 +193,6 @@ table {
     align-items: center;
     position: relative;
     justify-content: center;
-    padding-left: 0;
 }
 
 .home-title h1 {
@@ -217,7 +210,7 @@ table {
     flex-direction: column;
     font-size: 50px;
     line-height: 60px;
-    padding-left: 3%;
+   padding-left: 1%;
 }
 
 @media all and (min-width: 999px) {
@@ -227,6 +220,7 @@ table {
         line-height: 56px;
         text-align: left;
         margin-top: 0%;
+
     }
 
 }
@@ -238,6 +232,7 @@ table {
         text-align: center;
         margin-top: -4%;
         align-items: center;
+          padding-left: 2%;
     }
 }
 
@@ -381,6 +376,7 @@ table {
 
 .home-about-us .about-us-slider {
     width: 100%;
+    padding-right: 5%;
 }
 
 .home-about-us {
@@ -416,7 +412,7 @@ table {
 
 .about-us-content {
     padding-top: 7%;
-    padding-right: 7%;
+    padding-right: 5%;
 }
 
 .about-us-content p {
@@ -458,10 +454,12 @@ table {
 
     .home-about-us .about-us-content {
         width: 50%;
+        padding-right: 7%;
     }
 
     .home-about-us .about-us-slider {
         width: 50%;
+        padding-right: 0;
     }
 
 }
@@ -733,7 +731,7 @@ p.partners-number-medium {
 */
 
 .home-partners .cj-container {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     padding-left: 0;
 }
 
@@ -748,17 +746,13 @@ p.partners-number-medium {
         margin-bottom: 60px;
     }
 
-    .home-partners .cj-container {
-        padding-bottom: 180px;
-    }
-
 }
 
-@media all and (max-width: 1024px) {
+@media all and (min-width: 1025px) {
 
-    /*  .home-partners .cj-container{
-          width: 95%;
-          }*/
+     .home-partners .cj-container {
+        padding-bottom: 180px;
+    }
 
 }
 

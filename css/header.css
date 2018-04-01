@@ -45,12 +45,22 @@
 .menu-control{
 	margin-right: 20px;
 }
+.header-controls-title{
+	margin-top: 40px;
+}
 
 .home-navigation{
 	position: absolute;
 }
+
 .header-navigation a{
 	font-family: 'Helvetica Neue Cyr Bold';
+}
+
+
+
+.header-languages{
+	margin-bottom: 40px;
 }
 .header-languages a{
 	font-family: 'Helvetica Neue Cyr Bold';
@@ -195,6 +205,7 @@
 		background-color: #000;
 		width: 100px;
 		z-index: 1;
+		margin-bottom: 0;
 	}
 
 	.header-languages li a span{
@@ -204,6 +215,11 @@
 		color: #fff;
 		text-decoration: none;
 	}
+
+	.header-languages a.active-lang{
+		display: none;
+	}
+
 	.header-languages li a{
 		display: block;
 		text-decoration: none;
@@ -223,10 +239,10 @@
 		z-index: 2;
 		cursor: pointer;
 	}
+
 	.lang-icon{
 		margin-left: 10px;
 	}
-
 
 	.current-lang{
 		text-transform: uppercase;
@@ -274,6 +290,9 @@
 }
 
 @media all and (max-width: 1098px){
+	.header-lang-btn{
+		display: none;
+	}
 	.logo{
 		display: inline-block;
 		width: 30%;
@@ -310,9 +329,16 @@
 		height: 45px;
 	}
 
+	.header-navigation a.active-nav-item{
+		background: linear-gradient(90deg, #b0010b 50%, #b0010b 50%, #f8292d);
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	    color: #f8292d;
+	}
+
 	.header-navigation a{
 		font-size: 18px;
-		color: #fff;
+		color: #777;
 		line-height: 100px;
 		font-weight: 800;
 	}
@@ -327,10 +353,13 @@
 		display: inline-block;
 		margin: 0 20px;
 	}
+	.header-languages a.active-lang{
+		color: #fff;
+	}
 
 	.header-languages a{
 		font-size: 18px;
-		color: #fff;
+		color: #777;
 		text-align: center;
 		font-weight: 800;
 	}
