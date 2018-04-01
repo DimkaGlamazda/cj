@@ -10,7 +10,6 @@ $.cj.projectsAutocount = {
 
 	init : function () {
 	
-
 		if($.cj.projectsAutocount.flag){
 			var w_top = $(window).scrollTop() + $(window).height();
 			var e_top = $(this.triggerContainer).offset().top;
