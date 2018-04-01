@@ -1,6 +1,7 @@
 .logo img{
 	width: 180px;
 }
+
 .header{
 	z-index: 998;
 	position: fixed;
@@ -21,7 +22,6 @@
 
 @media all and (max-width: 1024px){
 	.header{
-		
 		height: 100px;
 		background-color: #fff;
 	}
@@ -42,9 +42,11 @@
 .logo{
 	margin-left: 20px;
 }
+
 .menu-control{
 	margin-right: 20px;
 }
+
 .header-controls-title{
 	margin-top: 40px;
 }
@@ -293,10 +295,6 @@
 	.header-lang-btn{
 		display: none;
 	}
-	.logo{
-		display: inline-block;
-		width: 30%;
-	}
 	.header-languages{
 		display: block !important;
 	}
@@ -393,4 +391,16 @@
 		display: none !important;
 	}
 
+}
+
+@media all and (max-width:680px){
+   .logo img{
+		width: 145px;
+	}
+	.header-container{
+		height: 70px;
+	}
+	.header{
+		height: 70px;
+	}
 }
