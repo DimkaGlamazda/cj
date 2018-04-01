@@ -19,6 +19,18 @@
 	align-items: center;
 }
 
+@media all and (max-width: 1024px){
+	.header{
+		
+		height: 100px;
+		background-color: #fff;
+	}
+	.header-container{
+		width: 100%;
+		padding: 0 3%
+	}
+}
+
 @media all and (min-width: 1400px){
 	.header-container {
 		width: 1400px;

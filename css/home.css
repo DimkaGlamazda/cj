@@ -49,7 +49,7 @@ table {
 }
 
 .cj-container {
-    width: 95%;
+    width: 100%;
     padding-left: 5%;
     margin: auto;
     background-color: #fff;
@@ -59,22 +59,47 @@ table {
     .cj-container {
         width: 1400px;
         margin: auto;
+        padding-left: 5%;
+    }
+}
+
+/*
+============================================
+████──███─███─████─█─█─█───███
+█──██─█───█───█──█─█─█─█────█
+█──██─███─███─████─█─█─█────█
+█──██─█───█───█──█─█─█─█────█
+████──███─█───█──█─███─███──█
+============================================
+*/
+
+.cj-btn-container {
+    width: 100%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+@media all and (min-width: 1026px) {
+    .cj-btn-container {
+        justify-content: flex-end;
     }
 }
 
 .cj-btn {
-    margin: 30px auto;
+    margin: 30px 0;
 }
 
 .cj-btn span {
     display: block;
-    width: 112px;
-    height: 32px;
+    width: 182px;
+    height: 52px;
+
     color: #000;
     background-color: #fff;
     border-radius: 35px;
     text-align: center;
-    line-height: 32px;
+    line-height: 52px;
     font-size: 17px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -98,8 +123,8 @@ table {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    height: 40px;
-    width: 120px;
+    width: 190px;
+    height: 60px;
     border-radius: 35px;
     background: rgba(176, 0, 11, 1);
     background: -moz-linear-gradient(left, rgba(176, 0, 11, 1) 0%, rgba(246, 41, 12, 1) 100%);
@@ -111,18 +136,26 @@ table {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b0000b', endColorstr='#f6290c', GradientType=1);
 }
 
-@media all and (min-width: 999px) {
-    .cj-btn span {
-        width: 182px;
-        height: 52px;
-        line-height: 52px;
-    }
-
-    .cj-btn {
-        width: 190px;
-        height: 60px;
-    }
+.section-header {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-left: 4px #e30808 solid;
+    font-family: 'Helvetica Neue Cyr Bold';
+    font-weight: 700;
 }
+
+/*
+============================================
+███──███──███──█────███
+─█────█────█───█────█
+─█────█────█───█────███
+─█────█────█───█────█
+─█───███───█───███──███
+============================================
+*/
 
 .home-title {
     position: relative;
@@ -173,14 +206,18 @@ table {
     height: 25%;
     width: 100%;
     font-family: 'Helvetica Neue Cyr Bold';
-    font-size: 30px;
-    line-height: 30px;
-    text-align: center;
     z-index: 4;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 50px;
+    line-height: 60px;
+    padding-left: 3%;
 }
 
 @media all and (min-width: 999px) {
@@ -189,9 +226,9 @@ table {
         font-size: 55px;
         line-height: 56px;
         text-align: left;
-        margin-top: 10%;
-        margin-left: 5%;
+        margin-top: 0%;
     }
+
 }
 
 @media all and (min-width: 1500px) {
@@ -199,7 +236,8 @@ table {
         font-size: 60px;
         line-height: 61px;
         text-align: center;
-        margin-top: 10%;
+        margin-top: -4%;
+        align-items: center;
     }
 }
 
@@ -264,7 +302,7 @@ table {
     }
 }
 
-@media only screen and (max-device-width: 768px) {
+@media all and (max-device-width: 768px) {
 
     .icon-scroll {
         height: 60px;
@@ -278,7 +316,7 @@ table {
         width: 7px;
         height: 7px;
         margin: 1px auto 0 auto;
-        border: 1px solid #000;
+        border: 1px solid #acafb1;
         border-radius: 50%;
     }
 
@@ -287,7 +325,7 @@ table {
         width: 24px;
         height: 39px;
         margin: 10px auto 0;
-        border: 1px solid #000;
+        border: 1px solid #acafb1;
     }
 
     .icon-scroll:before {
@@ -318,15 +356,31 @@ table {
 
 }
 
-.section-header {
-    padding-left: 10px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    height: 20px;
-    line-height: 20px;
-    border-left: 4px #e30808 solid;
-    font-family: 'Helvetica Neue Cyr Bold';
-    font-weight: 700;
+/*
+============================================
+████──████───████──█─█──███
+█──█──█──██──█──█──█─█───█
+████──████───█──█──█─█───█
+█──█──█──██──█──█──█─█───█
+█──█──████───████──███───█
+============================================
+*/
+
+.home-about-us .cj-container {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-about-us .about-us-content {
+    width: 100%;
+}
+
+.home-about-us .about-us-slider {
+    width: 100%;
 }
 
 .home-about-us {
@@ -361,8 +415,8 @@ table {
 }
 
 .about-us-content {
-    padding-top: 15%;
-    padding-right: 13%;
+    padding-top: 7%;
+    padding-right: 7%;
 }
 
 .about-us-content p {
@@ -391,63 +445,63 @@ table {
     visibility: hidden;
 }
 
+.home-about-us .cj-btn-container {
+    padding-bottom: 30px;
+}
+
+@media all and (min-width: 1026px) {
+
+    .home-about-us .cj-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home-about-us .about-us-content {
+        width: 50%;
+    }
+
+    .home-about-us .about-us-slider {
+        width: 50%;
+    }
+
+}
+
+/*
+============================================
+████──████──█──█──███──███──█─█──███──█───██─███──█──█──███──███
+█──█──█──█──█──█───█───█────█─█──█────██─███─█────██─█───█───█
+████──█─────████───█───███──█─█──███──█─█─██─███──█─██───█───███
+█──█──█──█──█──█───█───█────███──█────█───██─█────█──█───█─────█
+█──█──████──█──█──███──███───█───███──█───██─███──█──█───█───███
+============================================
+*/
+
+.home-projects .cj-container {
+    padding-bottom: 40px;
+    display: block;
+}
+
 .project-item {
-    display: flex;
-    justify-content: space-between;
-    border-top: #e1dede solid 1px;
-}
-
-.project-item:nth-child(3) {
-    border-bottom: #e1dede solid 1px;
-}
-
-.project-item h3 {
-    font-family: 'Helvetica Neue Cyr Bold';
-    font-size: 14px;
-    line-height: 80px;
-    margin-bottom: 0;
+    padding-bottom: 40px;
 }
 
 .project-item p {
     font-family: 'Helvetica Neue Cyr Bold';
-    font-size: 27px;
-    line-height: 80px;
+    font-size: 70px;
+    line-height: 60px;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .partner-number-description {
-    font-size: 16px;
+    font-size: 25px;
     padding-left: 5px;
+    display: block;
 }
 
-.success-ico-color {
-    background: linear-gradient(90deg, #b0010b 50%, #b0010b 50%, #f8292d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #f8292d;
-}
-
-@media all and (min-width: 999px) {
-    .project-item-middle {
-        border-left: 1px #e1dede solid;
-        border-right: 1px #e1dede solid;
-    }
-}
-
-.home-about-us .cj-container {
-    padding-bottom: 80px;
-}
-
-.home-projects .cj-container {
-    padding-bottom: 80px;
-}
-
-.home-news .cj-container {
-    padding-bottom: 80px;
-}
-
-.home-partners .cj-container {
-    padding-bottom: 80px;
+p.partners-number-medium {
+    font-size: 50px;
+    line-height: 50px;
 }
 
 @media all and (min-width: 720px) {
@@ -456,55 +510,28 @@ table {
         margin-bottom: 60px;
     }
 
-    .home-partners .section-header {
-        margin-left: 5%;
-        margin-bottom: 60px;
-    }
-
-    .home-news .section-header {
-        margin-bottom: 60px;
-    }
-
-    .home-about-us .cj-container {
-        padding-bottom: 180px;
-    }
-
-    .home-partners .cj-container {
-        padding-bottom: 180px;
-    }
-
-    .home-projects .cj-container {
-        padding-bottom: 180px;
-    }
-
-    .home-news .cj-container {
-        padding-bottom: 180px;
-    }
-
     .home-projects .cj-btn {
         margin-top: 60px;
     }
 
-    .project-items {
-        width: 90%;
-        margin-left: 1%;
-    }
+}
 
+@media all and (max-width: 1025px) {
+    .project-item-middle {
+        border-left: 1px #e1dede solid;
+        border-right: 1px #e1dede solid;
+    }
+}
+
+@media all and (min-width: 1026px) {
     .project-item {
         display: flex;
-        flex-direction: column;
-        border-top: none;
-        padding-bottom: 50px;
+        justify-content: space-between;
+        border-top: #e1dede solid 1px;
     }
 
-    .project-item:last-child {
-        border-bottom: none;
-    }
-
-    .project-item h3 {
-        font-size: 17px;
-        text-align: center;
-        height: 100px;
+    .home-projects .cj-container {
+        padding-bottom: 180px;
     }
 
     .project-item p {
@@ -522,7 +549,85 @@ table {
 
     .partner-number-description {
         font-size: 38px;
-        display: block;
+    }
+
+    .project-item {
+        display: flex;
+        flex-direction: column;
+        border-top: none;
+        padding-bottom: 50px;
+    }
+
+    .project-item-middle {
+        border-left: 1px #e1dede solid;
+        border-right: 1px #e1dede solid;
+    }
+}
+
+.project-item:nth-child(3) {
+    border-bottom: #e1dede solid 1px;
+}
+
+.project-item h3 {
+    font-family: 'Helvetica Neue Cyr Bold';
+    font-size: 14px;
+    line-height: 80px;
+    margin-bottom: 0;
+}
+
+.success-ico-color {
+    background: linear-gradient(90deg, #b0010b 50%, #b0010b 50%, #f8292d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #f8292d;
+}
+
+@media all and (min-width: 720px) {
+
+    .project-items {
+        width: 90%;
+        margin-left: 1%;
+    }
+
+    .project-item:last-child {
+        border-bottom: none;
+    }
+
+    .project-item h3 {
+        font-size: 17px;
+        text-align: center;
+        height: 100px;
+    }
+
+}
+
+/*
+============================================
+█──█──███──█───█──███
+██─█──█────█───█──█
+█─██──███──█─█─█──███
+█──█──█────█████────█
+█──█──███───█─█───███
+============================================
+*/
+
+.home-news .cj-container {
+    padding-bottom: 40px;
+}
+.home-news .cj-btn-container{
+    padding-top: 30px;
+}
+@media all and (min-width: 720px) {
+
+    .home-news .section-header {
+        margin-bottom: 60px;
+    }
+}
+
+@media all and (min-width: 1025px) {
+
+    .home-news .cj-container {
+        padding-bottom: 180px;
     }
 }
 
@@ -532,6 +637,7 @@ table {
     border-bottom: #e1dede solid 1px;
     padding-top: 30px;
     padding-bottom: 30px;
+    cursor: pointer;
 }
 
 .news-item-header {
@@ -582,10 +688,11 @@ table {
 
     .news-item {
         flex-direction: row;
+
     }
 
     .news-item-header {
-        width: 35%;
+        width: 45%;
         align-items: center;
     }
 
@@ -607,21 +714,52 @@ table {
 
     .news-title {
         justify-content: start;
-        width: 50%;
     }
 
     .news-item-body {
-        width: 65%;
+        width: 55%;
     }
 
 }
 
+/*
+============================================
+████──████──████──███──█──█──███──████──███
+█──█──█──█──█──█───█───██─█──█────█──█──█
+████──████──████───█───█─██──███──████──███
+█─────█──█──█─█────█───█──█──█────█─█─────█
+█─────█──█──█─█────█───█──█──███──█─█───███
+============================================
+*/
+
 .home-partners .cj-container {
+    padding-bottom: 40px;
     padding-left: 0;
 }
 
 .home-partners .section-header {
     margin-left: 5%;
+}
+
+@media all and (min-width: 720px) {
+
+    .home-partners .section-header {
+        margin-left: 5%;
+        margin-bottom: 60px;
+    }
+
+    .home-partners .cj-container {
+        padding-bottom: 180px;
+    }
+
+}
+
+@media all and (max-width: 1024px) {
+
+    /*  .home-partners .cj-container{
+          width: 95%;
+          }*/
+
 }
 
 .partners-carousel-container {
@@ -675,23 +813,20 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 176px;
-    margin-top: 60px;
+    height: 110px;
+
 }
 
 .partner-item img {
     display: inline-block;
-    width: 240px;
+    width: 170px !important;
 }
 
-@media all and (min-width: 999px) {
+@media all and (min-width: 1025px) {
     .partners-next-container,
     .partners-prev-container {
         width: 5%;
     }
-
-
-
 
     .partners-next-container img,
     .partners-prev-container img {
@@ -709,6 +844,7 @@ table {
         width: 50%;
         margin: auto;
         padding: 30px 20px;
+        height: 150px;
     }
 
     .partner-item img {
@@ -716,9 +852,3 @@ table {
         text-align: center;
     }
 }
-
-
-
-
-
-
