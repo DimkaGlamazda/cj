@@ -608,14 +608,12 @@ p.partners-number-medium {
     color: #f8292d;
 }
 
-@media all and (min-width:680px){
-    .project-item h3 {
-        font-family: 'Helvetica Neue Cyr Bold';
-        font-size: 14px;
-        line-height: 80px;
-        margin-bottom: 0;
-    }
-
+.project-item h3 {
+    font-family: 'Helvetica Neue Cyr Bold';
+    font-size: 17px;
+    line-height: 80px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 @media all and (max-width:680px) {
@@ -628,6 +626,7 @@ p.partners-number-medium {
         border-top: #e1dede solid 1px;
     }
     .project-item p {
+        display: inline-block;
         font-family: 'Helvetica Neue Cyr Bold';
         font-size: 25px;
         line-height: 25px;
@@ -639,11 +638,9 @@ p.partners-number-medium {
         width: 90%;
         margin-left: 1%;
     }
-
-
-
     .project-item h3 {
         font-size: 17px;
+        line-height: 25px;
         text-align: center;
         height: 25px;
         margin-bottom: 0;
