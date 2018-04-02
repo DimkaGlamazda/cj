@@ -298,9 +298,9 @@ table {
 @media all and (max-device-width: 768px) {
 
     .icon-scroll {
-        height: 60px;
+        height: 62px;
         border-radius: 4px;
-        width: 28px;
+        width: 30px;
     }
 
     .icon-scroll:after {
@@ -314,10 +314,10 @@ table {
     }
 
     .icon-scroll-screen {
-        position: relative;
-        width: 24px;
-        height: 39px;
-        margin: 10px auto 0;
+          position: relative;
+        width: 26px;
+        height: 43px;
+        margin: 8px auto 0;
         border: 1px solid #acafb1;
     }
 
@@ -331,8 +331,8 @@ table {
         }
         100% {
             opacity: 0;
-            -webkit-transform: translateY(-46px);
-            transform: translateY(-46px);
+            -webkit-transform: translateY(-23px);
+            transform: translateY(-23px);
         }
     }
 
@@ -342,8 +342,8 @@ table {
         }
         100% {
             opacity: 0;
-            -webkit-transform: translateY(-46px);
-            transform: translateY(-46px);
+            -webkit-transform: translateY(-23px);
+            transform: translateY(-23px);
         }
     }
 
@@ -365,9 +365,10 @@ table {
     }
 
     .icon-scroll {
-        height: 50px;
+        height: 62px;
         border-radius: 4px;
-        width: 24px;
+        width: 30px;
+        margin-left: -12px;
     }
 
     .icon-scroll:after {
@@ -382,9 +383,9 @@ table {
 
     .icon-scroll-screen {
         position: relative;
-        width: 16px;
-        height: 27px;
-        margin: 11px auto 0;
+        width: 26px;
+        height: 43px;
+        margin: 8px auto 0;
         border: 1px solid #acafb1;
     }
 
@@ -546,6 +547,9 @@ table {
 
     .home-about-us .cj-container {
         padding-bottom: 80px;
+    }
+    .about-us-content p{
+        margin-bottom: 0px;
     }
 }
 
@@ -742,10 +746,6 @@ p.partners-number-medium {
 
 .home-news .cj-container {
     padding-bottom: 40px;
-}
-
-.home-news .cj-btn-container {
-    padding-top: 30px;
 }
 
 @media all and (min-width: 720px) {
@@ -994,12 +994,13 @@ p.partners-number-medium {
     .owl-dots {
         display: flex;
         justify-content: center;
+        margin-top: 35px;
     }
     .owl-dot{
-        background-color: #444 !important;
-        width: 20px;
-        height: 20px;
-        margin: 0 10px;
+        background-color: #999 !important;
+        width: 10px;
+        height: 10px;
+        margin: 0 7px;
         border-radius: 30px;
     }
 
@@ -1012,6 +1013,6 @@ p.partners-number-medium {
     }
 
     button.owl-dot.active{
-        background-color: #666 !important;
+        background-color: #222 !important;
     }
 }
