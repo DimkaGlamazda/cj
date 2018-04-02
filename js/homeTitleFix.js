@@ -4,22 +4,29 @@ $.cj.homeTitleFix = {
 
     container : '.home-title',
 
+    is_mobile_size_set : false,
 
-    onResize : function () {
-        var width = $(window).width();
+
+    doResize : function () {
+        if(is_mobile_width && this.is_mobile_size_set)
+            return false;
+
         var height = $(window).height();
 
+        $($.cj.homeTitleFix.container).css('height', height);
 
-        $($.cj.homeTitleFix.container).css('height', $(window).height());
-     
+        if(is_mobile_width)
+            this.is_mobile_size_set = true;
+        else
+            this.is_mobile_size_set = true;
+    },
+
+    onResize : function () {
+        this.doResize();
     },
 
     init : function () {
-        var width = $(window).width();
-        var height = $(window).height();
-
-        $($.cj.homeTitleFix.container).css('height', $(window).height());
-
+        this.doResize();
     }
 };
 

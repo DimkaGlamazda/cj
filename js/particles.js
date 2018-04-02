@@ -97,12 +97,14 @@ $.cj.Particles = {
 
     onResize: function () {
 
-        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         var w = windowWidth;
         var h = windowHeight;
 
         this.canvas.width  = w*this.ratio;
         this.canvas.height = h*this.ratio;
+
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
 
         $('#js-background-renderer').css({
             'width': w,

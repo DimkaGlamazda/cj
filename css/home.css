@@ -990,6 +990,7 @@ p.partners-number-medium {
     .partners-prev-container{
         display: none;
     }
+
     .owl-dots {
         display: flex;
         justify-content: center;

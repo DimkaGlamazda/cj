@@ -7,6 +7,8 @@ $.cj.menuHandler = {
     langMenuTrigger : '.header-lang-btn',
     langMenuList : '.header-languages',
 
+
+
     onResize : function () {
 
         var width = $(window).width();
@@ -27,6 +29,7 @@ $.cj.menuHandler = {
 
 
         var langBlock = $($.cj.menuHandler.langMenuList);
+
         if(langBlock.css('display') == 'block'){
             langBlock.slideUp('medium');
         }
@@ -42,9 +45,9 @@ $.cj.menuHandler = {
     },
 
     init : function () {
-        var width = $(window).width();
 
-        
+
+        var width = $(window).width();
 
         if(width < 1099){
             $($.cj.menuHandler.header).css('position', 'fixed')
