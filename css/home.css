@@ -250,6 +250,7 @@ table {
 .icon-scroll {
     bottom: 5%;
     margin-top: -25px;
+    margin-left: -20px;
     box-shadow: inset 0 0 0 1px #acafb1;
     border-radius: 25px;
     width: 24px;
@@ -535,6 +536,11 @@ table {
     display: block;
 }
 
+   .project-items {
+        width: 90%;
+        padding-left: 1%;
+    }
+
 p.partners-number-medium {
     font-size: 50px;
     line-height: 50px;
@@ -560,11 +566,6 @@ p.partners-number-medium {
 }
 
 @media all and (min-width: 1026px) {
-    .project-item {
-        display: flex;
-        justify-content: space-between;
-        border-top: #e1dede solid 1px;
-    }
 
     .home-projects .cj-container {
         padding-bottom: 180px;
@@ -624,20 +625,32 @@ p.partners-number-medium {
         padding-bottom: 15px;
         padding-top: 15px;
         border-top: #e1dede solid 1px;
+        width: 100%;
     }
+
     .project-item p {
         display: inline-block;
         font-family: 'Helvetica Neue Cyr Bold';
-        font-size: 25px;
+        font-size: 19px;
         line-height: 25px;
         margin-bottom: 0;
         text-align: center;
     }
 
-    .project-items {
-        width: 90%;
-        margin-left: 1%;
+    .project-items .col-md-4{
+        padding: 0;
     }
+
+    .project-items .row{
+      margin-right: 0px; 
+      margin-left: 0px; 
+    }
+
+    .project-items {
+        width: 98%;
+        margin-left: 0;
+    }
+
     .project-item h3 {
         font-size: 17px;
         line-height: 25px;
@@ -658,11 +671,13 @@ p.partners-number-medium {
 
     .partners-number-medium span{
         display: inline-block;
-        font-size: 25px;
+        font-size: 19px;
         height: 25px;
+        font-family: sans-serif;
+        font-weight: 100;
     }
 
-    .project-item:last-child {
+    .project-item-last{
         border-bottom: #e1dede solid 1px;
     }
 
