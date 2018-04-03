@@ -13,7 +13,8 @@
 	height: 350px;
 	width: 100%;
 	background-image: url('../img/mask.png');
-	background-size:cover; 
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .about-title .cj-container{
@@ -91,7 +92,7 @@
 	margin-right: 5%;
 	text-align: justify;
 	font-size: 20px;
-	font-family: 'HelveticaNeueMedium';
+	font-family: 'HELVETICAMEDIUM';
 }
 
 /*
@@ -104,14 +105,15 @@
 ███████████████████████████████████████████████
 */
 
-.about-sub-title{
+.about-sub-title {
 	background-image: url('../img/about-sub-title-bg.png');
-	background-size:cover;
+	-webkit-background-size: cover;
+	background-size: cover;
 	height: 650px;
 	width: 100%;
 }
 
-.about-sub-title .cover-bg{
+.about-sub-title .cover-bg {
 	width: inherit;
 	height: inherit;
 	background-image: url('../img/overlay.png');
@@ -124,4 +126,113 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+/*
+███████████████████████
+█───██───██────██─███──█
+██─███─████─██─██──█───█
+██─███───██────██─█─█──█
+██─███─████─██─██─███──█
+██─███───██─██─██─███──█
+███████████████████████
+*/
+
+.about-team .cj-container {
+	padding-left: 0;
+	padding: 120px 0;
+}
+
+.about-team .section-header {
+	margin: 0 5% 60px;
+}
+
+.team-members {
+	overflow: hidden;
+}
+
+.team-member {
+	margin-bottom: 70px;
+}
+
+.team-member img {
+	display: block;
+	width: 300px;
+	height: 300px;
+	margin: 0 auto 30px;
+}
+
+.member-name {
+	width: 300px;
+	margin: 0 auto 20px;
+	font-size: 26px;
+	line-height: 25px;
+	font-family: 'Helvetica Neue Cyr Bold';
+}
+
+.member-position {
+	width: 300px;
+	margin: 0 auto 30px;
+	font-size: 24px;
+	line-height: 24px;
+	font-family: 'HELVETICAMEDIUM';
+}
+
+.team-member article {
+	width: 300px;
+	margin: auto;
+	font-size: 20px;
+	line-height: 23px;
+	font-family: 'HELVETICAMEDIUM';
+}
+
+.row.team-members {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/*
+███████████████████████████
+█─████───██─██─██─██─██───█
+█─█████─███──█─██─█─███─███
+█─█████─███─█──██──████───█
+█─█████─███─██─██─█─█████─█
+█───██───██─██─██─██─██───█
+███████████████████████████
+*/
+
+.about-links .cj-container {
+	padding-left: 0;
+}
+
+.about-links .links-container {
+	padding: 0 5% 90px;
+}
+
+.about-links .links-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.about-links .links-container a {
+	height: 300px;
+	width: 45%;
+	line-height: 300px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Helvetica Neue Cyr Bold';
+	font-size: 40px;
+}
+
+.about-projects-service {
+	background: #000 url('../img/sistema-de-gestao.png') 100% 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.about-projects-link {
+	background: #000 url('../img/global-business.jpg') 100% 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
 }

@@ -68,16 +68,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b0000b', endColorstr='#f6290c', GradientType=1);
 }
 
-.section-header {
-    padding-left: 10px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    height: 18px;
-    line-height: 20px;
-    border-left: 4px #e30808 solid;
-    font-family: 'Helvetica Neue Cyr Bold';
-    font-weight: 700;
-}
+
 
 /*
 ============================================
