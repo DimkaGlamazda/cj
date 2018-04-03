@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/lib/owl.carousel.min.css">
     <link rel="stylesheet" href="css/lib/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/lib/animate.min.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/about.css">
@@ -17,6 +18,8 @@
     <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lib/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/lib/jquery.spincrement.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.gsap.min.js"></script>
+    <script type="text/javascript" src="js/lib/TweenMax.min.js"></script>
 
     <script type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/preloader.js"></script>
@@ -26,8 +29,9 @@
     <script type="text/javascript" src="js/homeTitleFix.js"></script>
     <script type="text/javascript" src="js/menuHandler.js"></script>
     <script type="text/javascript" src="js/goToTop.js"></script>
+    <script type="text/javascript" src="js/breadcrump.js"></script>
 </head>
-<body>
+<body style="height: 2000px">
     <div class="cj-container">
         <div class="go-to-top" data-go-to-top="btn">
             <img src="img/arrowGoToTop.png" alt="go to top">
@@ -37,7 +41,7 @@
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <img src="img/logotype.png" alt="Logoipe">
+                <a href="index.html"><img src="img/logotype.png" alt="Logoipe"></a>
             </div>
             <button class="menu-control external">
                 <span></span>
@@ -46,8 +50,8 @@
                 <p class="header-controls-title">CoinJapan</p>
                 <nav class="header-navigation">
                     <ul>
-                        <li><a class="active-nav-item" href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active-nav-item" href="about.html">About</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Partners</a></li>
@@ -65,26 +69,40 @@
                 </ul>
             </div>
         </div>
-    </header>
+    </header><!-- HEADER -->
 
     <br><br><br>
 
     <section class="about-title">
-        
-    </section>
+        <div class="cj-container">
+            <h1>About Us</h1>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>    
+        </div>
+    </section><!-- TITLE -->
+
 
     <section class="about-description">
-        
-    </section>
+        <div class="cj-container">
+            <article>
+                Pellentesque pulvinar pellentesque habitant morbi tristique. Id diam vel quam elementum pulvinar etiam. Tristique senectus et netus et. Lacus viverra vitae congue eu. Interdum velit laoreet id donec ultrices tincidunt arcu non. Elementum facilisis leo vel fringilla est. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Interdum velit euismod in pellentesque. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Lacus vel facilisis volutpat est velit egestas dui id ornare.Pellentesque pulvinar pellentesque habitant morbi tristique. Id diam vel quam elementum pulvinar etiam. Tristique senectus et netus et. Lacus viverra vitae congue eu. Interdum velit laoreet id donec ultrices tincidunt arcu non. Elementum facilisis leo vel fringilla est. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Interdum velit euismod in pellentesque. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Lacus vel facilisis volutpat est velit egestas dui id ornare. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Interdum velit euismod in pellentesque. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Lacus vel facilisis volutpat est velit egestas dui id ornare.Pellentesque pulvinar pellentesque habitant morbi tristique. Id diam vel quam elementum pulvinar etiam. Tristique senectus et netus et. Lacus viverra vitae congue.
+            </article>
+        </div>
+    </section><!-- DESCRIPTION -->
 
     <section class="about-sub-title">
-        
-    </section>
+        <div class="cover-bg">
+            <div class="cj-container">
+                <img src="img/coinjapan-sub-logo.png" alt="CoinJapan">
+            </div>
+        </div>
+    </section><!-- SUB-TITLE -->
 
     <section class="about-team">
         
     </section>
-
 
     <footer class="footer">
         <div class="footer-container">

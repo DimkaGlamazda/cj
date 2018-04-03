@@ -20,3 +20,13 @@
          url('../fonts/HELVETICAMEDIUM.svg#HELVETICAMEDIUM') format('svg');
 }
 
+@font-face {
+    font-family: 'HelveticaNeueMedium';
+    src: url('../fonts/HelveticaNeueMedium.eot');
+    src: url('../fonts/HelveticaNeueMedium.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueMedium.woff2') format('woff2'),
+         url('../fonts/HelveticaNeueMedium.woff') format('woff'),
+         url('../fonts/HelveticaNeueMedium.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueMedium.svg#HelveticaNeueMedium') format('svg');
+}
+

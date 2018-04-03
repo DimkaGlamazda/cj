@@ -16,6 +16,11 @@ $.cj.Particles = {
 
     init: function (n, f) {
 
+        if($('#js-background-renderer').length == 0){
+            return false;
+        }
+
+
         this.x = 0,
             this.y = 100,
             this.range = 40,
@@ -97,6 +102,10 @@ $.cj.Particles = {
 
     onResize: function () {
 
+        if($('#js-background-renderer').length == 0){
+            return false;
+        }
+
         var w = windowWidth;
         var h = windowHeight;
 
@@ -113,6 +122,10 @@ $.cj.Particles = {
     },
 
     onUpdate: function () {
+
+        if($('#js-background-renderer').length == 0){
+            return false;
+        }
 
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
