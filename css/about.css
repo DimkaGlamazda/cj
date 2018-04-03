@@ -215,29 +215,32 @@
 }
 
 .about-links .links-container a {
-	height: 300px;
-	width: 45%;
+	display: block;
+	height: inherit;
+	width: 100%;
 	line-height: 300px;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
 	font-family: 'Helvetica Neue Cyr Bold';
 	font-size: 40px;
-	
+	background-color: rgba( 0, 0, 0, 0.8);
 }
 
 .about-projects-service {
-	background-blend-mode: multiply;
 	background-image: url('../img/sistema-de-gestao.png');
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-color: rgba( 0, 0, 0, 0.8);
 }
 
 .about-projects-link {
-	background-blend-mode: multiply;
 	background: url('../img/global-business.jpg') 100% 100%;
+}
+
+.about-projects-service,
+.about-projects-link {
+	height: 300px;
+	width: 45%;
+	background-blend-mode: multiply;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-color: rgba( 0, 0, 0, 0.8);
+
 }
