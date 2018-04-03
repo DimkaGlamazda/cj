@@ -1,6 +1,127 @@
-.about-title{
-	height: 250px;
+
+/*
+█████████████████████████
+█───██───██───██─████───█
+██─████─████─███─████─███
+██─████─████─███─████───█
+██─████─████─███─████─███
+██─███───███─███───██───█
+█████████████████████████
+*/
+
+.about-title {
+	height: 350px;
 	width: 100%;
 	background-image: url('../img/mask.png');
 	background-size:cover; 
+}
+
+.about-title .cj-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-color: transparent;
+	padding-left: 0;
+	height: inherit;
+}
+
+.about-title h1 {
+	background-color: transparent;
+	color: #fff;
+	font-size: 38px;
+	font-family: 'Helvetica Neue Cyr Bold';
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 50px;
+}
+
+.breadcrumbs {
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #fff;
+	margin-bottom: 0;
+	height: 100px;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+	line-height: 100px;
+	margin: 0 15px;
+}
+
+.breadcrumbs li a {
+	position: relative;
+	font-size: 12px;
+	color: #000;
+	font-family: 'Helvetica Neue Cyr Bold';
+	text-decoration: none;
+}
+
+.breadcrumbs li a:after {
+	content: '>';
+	position: absolute;
+	top: -43px;
+    right: -20px;
+	height: 10px;
+}
+
+.breadcrumbs li:last-child a:after {
+	display: none;
+}
+
+/*
+██████████████████████████████████████████████████████████████
+█────███───██───██────██────██───██────██───██───██────██─██─█
+█─██──██─████─████─██─██─██─███─███─██─███─████─███─██─██──█─█
+█─██──██───██───██─█████────███─███────███─████─███─██─██─█──█
+█─██──██─██████─██─██─██─█─████─███─██████─████─███─██─██─██─█
+█────███───██───██────██─█─███───██─██████─███───██────██─██─█
+██████████████████████████████████████████████████████████████
+*/
+
+.about-description .cj-container {
+	padding-left: 0;
+	height: inherit;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.about-description article {
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: justify;
+	font-size: 20px;
+	font-family: 'HelveticaNeueMedium';
+}
+
+/*
+███████████████████████████████████████████████
+█───██─█─██────████████───██───██───██─████───█
+█─████─█─██─██──████████─████─████─███─████─███
+█───██─█─██────███───███─████─████─███─████───█
+███─██─█─██─██──████████─████─████─███─████─███
+█───██───██────█████████─███───███─███───██───█
+███████████████████████████████████████████████
+*/
+
+.about-sub-title{
+	background-image: url('../img/about-sub-title-bg.png');
+	background-size:cover;
+	height: 650px;
+	width: 100%;
+}
+
+.about-sub-title .cover-bg{
+	width: inherit;
+	height: inherit;
+	background-image: url('../img/overlay.png');
+}
+
+.about-sub-title .cj-container {
+	padding-left: 0;
+	background: transparent;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
