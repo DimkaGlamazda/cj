@@ -1,3 +1,13 @@
+@media all and (max-width: 680px){
+
+}
+
+@media all and (max-width: 1024px){
+
+}
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -72,4 +82,204 @@ table {
     border-left: 4px #e30808 solid;
     font-family: 'Helvetica Neue Cyr Bold';
     font-weight: 700;
+}
+
+/*
+█████████████████████████████████████████████████████
+█────██────██────██───███████───██───██───██─████───█
+█─██─██─██─██─█████─██████████─████─████─███─████─███
+█────██────██─█──██───██───███─████─████─███─████───█
+█─█████─██─██─██─██─██████████─████─████─███─████─███
+█─█████─██─██────██───████████─███───███─███───██───█
+█████████████████████████████████████████████████████
+*/
+
+.page-title {
+    height: 500px;
+    width: 100%;
+}
+
+.page-title .cj-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: transparent;
+    padding-left: 0;
+    height: inherit;
+}
+
+.page-title h1 {
+    background-color: transparent;
+    color: #fff;
+    font-size: 38px;
+    font-family: 'Helvetica Neue Cyr Bold';
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+}
+
+/*
+███████████████████████████████████████████████████████████████████
+█────███────██───██────██────███────██────██─█─██─███──█────███───█
+█─██──██─██─██─████─██─██─██──██─██─██─██─██─█─██──█───█─██──██─███
+█────███────██───██────██─██──██─█████────██─█─██─█─█──█────███───█
+█─██──██─█─███─████─██─██─██──██─██─██─█─███─█─██─███──█─██──████─█
+█────███─█─███───██─██─██────███────██─█─███───██─███──█────███───█
+███████████████████████████████████████████████████████████████████
+*/
+
+.breadcrumbs {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #fff;
+    margin-bottom: 0;
+    height: 100px;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 15px;
+}
+
+.breadcrumbs li a {
+    position: relative;
+    font-size: 12px;
+    color: #000;
+    font-family: 'Helvetica Neue Cyr Bold';
+    text-decoration: none;
+}
+
+.breadcrumbs li a:after {
+    content: '';
+    position: absolute;
+    background: url('../img/breadcrump-arrow-right.png');
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    display: block;
+    width: 11px;
+    top: 2px;
+    right: -23px;
+    height: 10px;
+}
+
+.breadcrumbs li:last-child a:after {
+    display: none;
+}
+
+@media all and (max-width: 1400px){
+    .breadcrumbs {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/*
+████████████████████████████████████████████████████████████████████
+█────███────██───██───██────██─███──██████─████───██─██─██─██─██───█
+█─██──██─██─███─████─███─██─██──█───██████─█████─███──█─██─█─███─███
+█────███─██─███─████─███─██─██─█─█──█───██─█████─███─█──██──████───█
+█─██──██─██─███─████─███─██─██─███──██████─█████─███─██─██─█─█████─█
+█────███────███─████─███────██─███──██████───██───██─██─██─██─██───█
+████████████████████████████████████████████████████████████████████
+*/
+
+.bottom-links .cj-container {
+    padding-left: 0;
+}
+
+.bottom-links-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5% 90px;
+}
+
+.bottom-links-container a {
+    display: block;
+    height: inherit;
+    width: 100%;
+    line-height: 300px;
+    text-align: center;
+    background-color: rgba( 0, 0, 0, 0.8);
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Helvetica Neue Cyr Bold';
+}
+
+.bottom-links-container a img {
+    display: inline-block;
+    margin-bottom: -18px;
+}
+
+.bottom-links-container a:hover {
+    text-decoration: none;    
+    color: #fff;
+}
+
+.bottom-links-container a img.left-bottom-link-arrow{
+      -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin-bottom: -15px;
+}
+
+.services-link,
+.projects-link {
+    height: 300px;
+    width: 45%;
+    background-blend-mode: multiply;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.services-link {
+    background: url('../img/sistema-de-gestao.png') 100% 100%;
+}
+
+.projects-link {
+    background: url('../img/global-business.jpg') 100% 100%;
+}
+
+@media all and (max-width: 1024px){
+    
+    .bottom-links-container a {
+        line-height: 150px;
+    }
+
+    .services-link,
+    .projects-link {
+        height: 150px;
+    }
+}
+
+@media all and (max-width: 680px){
+
+    .bottom-links-container a {
+        line-height: 100px;
+        font-size: 20px;
+    }
+
+    .bottom-links-container a img{
+        width: 30px;
+    }
+
+    .services-link,
+    .projects-link {
+        height: 100px;
+    }
+
+    .bottom-links-container {
+        padding: 0 2% 60px;
+    }
+
+    .bottom-links-container a img {
+        margin-bottom: -10px;
+    }
+
+    .bottom-links-container a img.left-bottom-link-arrow{
+        margin-bottom: -8px;
+    }
+
 }
