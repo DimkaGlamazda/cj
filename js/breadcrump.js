@@ -23,11 +23,10 @@ var ScrollAnimation = {
 
 	onScroll : function(t){
 		var _this = this;
-		// alert(1);
 
-		// _this.$scroll.each(function(index, el) {
+		// $(_this.$scroll).each(function(index, el) {
 		// 	var $el = $(el);
-		// 	var slow = parseInt($el.data('float').slowmo,10);
+		// 	var slow = parseInt($el.data('float').slowmo, 10);
 		// 	var y = $el.offset().top;
 		// 	var oy = (t-y)/slow;
 		// 	TweenLite.to($el, 0.5, {
@@ -36,7 +35,7 @@ var ScrollAnimation = {
 		// });
 
 		var rX = t/10;
-		if( rX < 90 && this.$pan.length ){
+		if( rX < 90 && $(this.$pan).length ){
 			TweenLite.to(_this.$pan, 0.5, {
 				rotationX:rX,
 				transformPerspective:2000,

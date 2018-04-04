@@ -10,14 +10,11 @@
 */
 
 .about-title {
-	height: 350px;
+	height: 500px;
 	width: 100%;
-	background-image: url('../img/mask.png');
-	-webkit-background-size: cover;
-	background-size: cover;
 }
 
-.about-title .cj-container{
+.about-title .cj-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
