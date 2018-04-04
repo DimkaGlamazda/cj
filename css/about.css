@@ -41,8 +41,8 @@
 }
 
 .breadcrumbs {
-	margin-left: 5%;
-	margin-right: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
 	background-color: #fff;
 	margin-bottom: 0;
 	height: 100px;
@@ -63,11 +63,16 @@
 }
 
 .breadcrumbs li a:after {
-	content: '>';
+	content: '';
 	position: absolute;
-	top: -43px;
-    right: -20px;
-	height: 10px;
+	background: url('../img/breadcrump-arrow-right.png');
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	display: block;
+	width: 11px;
+    top: 2px;
+    right: -23px;
+    height: 10px;
 }
 
 .breadcrumbs li:last-child a:after {
@@ -315,6 +320,14 @@
 
 .about-projects-service {
 	background-image: url('../img/sistema-de-gestao.png');
+}
+
+.about-projects-service a img{
+	  -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .about-projects-link {
