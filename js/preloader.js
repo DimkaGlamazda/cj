@@ -11,6 +11,6 @@ $.cj.preloader = {
 		setTimeout(function() {
 	        $($.cj.preloader.block).fadeOut('fast');
             $.cj.cssAnimate.init();
-	    });
+	    }, this.time);
 	}
 };
