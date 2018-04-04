@@ -7,6 +7,9 @@ $.cj.cssAnimate = {
 
     init: function () {
 
+        if($(window).width() <= 680){
+            return false;
+        }
 
         $.each($(this.triggerContainer), function (i, e) {
             var elem = $(e);
