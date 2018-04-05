@@ -25,6 +25,14 @@
 	font-family: 'HELVETICAMEDIUM';
 }
 
+.about-description article h2.section-header {
+	padding-bottom: 20px;
+}
+
+.about-description article p {
+	padding-bottom: 40px;
+}
+
 /*
 ███████████████████████████████████████████████
 █───██─█─██────████████───██───██───██─████───█

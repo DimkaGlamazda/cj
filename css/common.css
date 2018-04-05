@@ -58,6 +58,16 @@ table {
     border-spacing: 0;
 }
 
+#preloader {
+    width: 100%; 
+    height: 1000px; 
+    position: fixed; 
+    background-color: #fff; 
+    top:0; 
+    left: 0; 
+    z-index: 999;
+}
+
 .cj-container {
     width: 100%;
     background-color: #fff;
@@ -116,7 +126,7 @@ table {
 }
 
 .page-titke-overlay {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     height: 500px;
     width: 100%;
 }
@@ -287,3 +297,4 @@ table {
     }
 
 }
+
