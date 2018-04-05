@@ -14,6 +14,7 @@
 	height: inherit;
 	padding-top: 80px;
 	padding-bottom: 80px;
+	margin:auto;
 }
 
 .about-description article {
@@ -98,6 +99,7 @@
     padding-top: 25px;
     height: 100%;
     overflow: hidden;
+    margin:auto;
 }
 
 .about-sub-title .cover-bg {
@@ -151,6 +153,7 @@
 .about-team .cj-container {
 	padding-left: 0;
 	padding: 120px 0;
+	margin:auto;
 }
 
 .about-team .section-header {
