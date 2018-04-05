@@ -214,7 +214,7 @@ table {
     width: 100%;
     line-height: 300px;
     text-align: center;
-    background-color: rgba( 0, 0, 0, 0.8);
+    background-color: rgba( 0, 0, 0, 0.5);
     font-size: 40px;
     color: #fff;
     font-family: 'Helvetica Neue Cyr Bold';
@@ -240,7 +240,8 @@ table {
 }
 
 .services-link,
-.projects-link {
+.projects-link,
+.about-link {
     height: 300px;
     width: 45%;
     background-blend-mode: multiply;
@@ -254,6 +255,10 @@ table {
 
 .projects-link {
     background: url('../img/global-business.jpg') 100% 100%;
+}
+
+.about-link {
+    background: url('../img/about-title-bg.jpg')  48% 24%;
 }
 
 @media all and (max-width: 1024px){
