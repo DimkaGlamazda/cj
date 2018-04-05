@@ -360,14 +360,12 @@
 */
 
 .home-about-us .cj-container {
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
     padding-bottom: 180px;
     display: flex;
     flex-direction: column;
-    margin: auto;
     padding-left: 5%;
+    margin: auto;
+
 }
 
 .home-about-us .about-us-content {
@@ -507,6 +505,7 @@
     padding-bottom: 40px;
     display: block;
     padding-left: 5%;
+    margin: auto;
 }
 
 .project-item {
@@ -696,6 +695,7 @@ p.partners-number-medium {
 .home-news .cj-container {
     padding-bottom: 40px;
     padding-left: 5%;
+    margin: auto;
 }
 
 @media all and (min-width: 720px) {
@@ -831,6 +831,7 @@ p.partners-number-medium {
 .home-partners .cj-container {
     padding-bottom: 60px;
     padding-left: 0;
+    margin:auto;
 }
 
 .home-partners .section-header {
