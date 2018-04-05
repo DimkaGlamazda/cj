@@ -11,10 +11,9 @@
 .sevise-border {
 	padding: 30px;
 	margin: 0 5%;
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+
 
 .services-description .cj-container h2,
 .main-service .cj-container h2,
@@ -32,6 +31,10 @@
 	margin-right: 10px;
 	background-color: #e30808;
 	color: #fff;
+}
+
+.main-service .sevise-border{
+	padding-bottom: 0;
 }
 
 .services-description .cj-container ul,
@@ -58,8 +61,8 @@
 */
 
 .services-description .cj-container {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 180px;
+	padding-bottom: 180px;
 	margin:auto;
 }
 
@@ -70,6 +73,7 @@
 .services-description .cj-container p {
 	text-align: justify;
 	padding-bottom: 20px;
+	line-height: 26px;
 }
 
 /*
@@ -83,7 +87,7 @@
 */
 
 .main-service .cj-container {
-	padding-bottom: 80px;
+	padding-bottom: 180px;
 	margin:auto;
 }
 
@@ -109,7 +113,7 @@
 */
 
 .ather-services .cj-container {
-	padding-bottom:80px; 
+	padding-bottom:180px; 
 	margin:auto;
 }
 
@@ -165,7 +169,7 @@
 */
 
 .services-call-to-action .cj-container{
-	padding-bottom:80px; 
+	padding-bottom:180px; 
 	margin:auto;
 }
 
