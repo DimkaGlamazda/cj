@@ -59,11 +59,10 @@
 	font-family: 'Helvetica Neue Cyr Bold';
 }
 
-
-
 .header-languages{
 	margin-bottom: 40px;
 }
+
 .header-languages a{
 	font-family: 'Helvetica Neue Cyr Bold';
 }
@@ -240,6 +239,7 @@
 		margin: 0;
 		z-index: 2;
 		cursor: pointer;
+		font-family: 'Helvetica Neue Cyr Bold';
 	}
 
 	.lang-icon{
