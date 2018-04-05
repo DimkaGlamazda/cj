@@ -86,6 +86,46 @@ $(function () {
       $.cj.menuHandler.onScroll();
 	});
 
+
+
+
+    /* scroll animation */
+
+    var latestKnownScrollY = $('html').scrollTop() || $('body').scrollTop();
+
+    $(window).on("scroll", function () {
+        latestKnownScrollY = $('html').scrollTop() || $('body').scrollTop();
+    });
+
+    $(window).on("mousewheel DOMMouseScroll", function(event) {
+        var scrollTo,
+              scrollDistance  = 400,
+              delta;
+        if (event.type == 'mousewheel') {
+              delta = event.originalEvent.wheelDelta / 100;
+        } else if (event.type == 'DOMMouseScroll') {
+              delta = - event.originalEvent.detail / 3;
+        }
+        scrollTo = latestKnownScrollY - delta * scrollDistance;
+        if (scrollTo) {
+            event.preventDefault(); 
+            event.stopPropagation(); 
+            $('body,html').stop().animate( { 
+                scrollTop : scrollTo
+             } , 500);
+         }  
+    } );
+
+
+    var isIE = ((navigator.appName == 'Microsoft Internet Explorer') || (navigator.userAgent.indexOf('Trident/7.0') != -1) || (navigator.userAgent.indexOf('Edge/') != -1));
+
+    if(isIE){
+        $('.services-call-to-action .cj-container h3').css('background', '#fff');
+        $('.active-nav-item').css('background', 'transparent');
+        $('.success-ico-color').css('background', '#fff');
+    }
+
+
 });
 
 
