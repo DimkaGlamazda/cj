@@ -1,0 +1,140 @@
+/*
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+█────██────██────████──██───██────██───██───███████───██─██─███████─██─██─█─██────███─███──█────███───██────██───█
+█─██─██─██─██─██─█████─██─████─██─███─███─██████████─███──█─███████──█─██─█─██─██──██──█───█─██──██─████─██─██─███
+█────██────██─██─█████─██───██─██████─███───██───███─███─█──██───██─█──██─█─██────███─█─█──█────███───██────██───█
+█─█████─█─███─██─██─██─██─████─██─███─█████─████████─███─██─███████─██─██─█─██─██──██─███──█─██──██─████─█─█████─█
+█─█████─█─███────██────██───██────███─███───███████───██─██─███████─██─██───██────███─███──█────███───██─█─███───█
+██████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+*/
+.projects-in-numbers .cj-container {
+	padding: 180px 5%;
+	margin: auto;
+}
+
+.projects-in-numbers .section-header {
+	margin: 0 5%;
+}
+
+.projects-wrapper.row {
+	margin: 0;
+	padding: 0 5%;
+}
+
+
+.partners-number-medium .achivment-amount {
+	font-size: 80px;
+}
+
+.partners-number-large .achivment-amount {
+	font-size: 100px;
+}
+
+.col-sm-12.col-md-4.project {
+	padding: 0;
+	margin: 30px 0;
+	height: 250px;
+	font-family: 'Helvetica Neue Cyr Bold';
+}
+
+.project h3 {
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+}
+
+.project p {
+	text-align: center;
+}
+
+.project-description {
+	display: block;
+	font-size: 38px;
+	height: 70px;
+	line-height: 70px;
+}
+
+.middle-project-border {
+	border-left: 1px #e1dede solid;
+    border-right: 1px #e1dede solid;
+}
+
+.partners-number-gradient {
+	background: linear-gradient(90deg, #b0010b 50%, #b0010b 50%, #f8292d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #f8292d;
+}
+
+@media all and (max-width: 767px) {
+
+    .project {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        border-top: #e1dede solid 1px;
+        width: 100%;
+    }
+
+    .project p {
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 19px;
+        line-height: 25px;
+        margin-bottom: 0;
+        text-align: center;
+        font-weight:100;
+    }
+
+    .project h3 {
+        font-size: 17px;
+        line-height: 25px;
+        text-align: center;
+        height: 25px;
+        margin-bottom: 0;
+    }
+
+    .middle-project-border {
+        border-left: none;
+        border-right: none;
+    }
+
+    .partners-number-medium .achivment-amount {
+        font-size: 25px;
+        height: 25px;
+    }
+
+    ..partners-number-medium .achivment-amount .project-description {
+        display: inline-block;
+        font-size: 19px;
+        height: 25px;
+        font-family: sans-serif;
+        font-weight: 100;
+    }
+
+    .project:last-child {
+        border-bottom: #e1dede solid 1px;
+    }
+
+}
+
+/*
+███████████████████████████████████████████████████████████████████████████████████████████████
+█────██────██────████──██───██────██───██───███████────██────██────██───██─██─██───██────██───█
+█─██─██─██─██─██─█████─██─████─██─███─███─█████████─██─██─██─██─██─███─███──█─██─████─██─██─███
+█────██────██─██─█████─██───██─██████─███───██───██────██────██────███─███─█──██───██────██───█
+█─█████─█─███─██─██─██─██─████─██─███─█████─███████─█████─██─██─█─████─███─██─██─████─█─█████─█
+█─█████─█─███────██────██───██────███─███───███████─█████─██─██─█─████─███─██─██───██─█─███───█
+███████████████████████████████████████████████████████████████████████████████████████████████
+*/
+
+/*
+████████████████████████████████████████████████████████████████████████████████████████
+█────██────██────████──██───██────██───██───███████────██───██─█─██───██───██─███─██───█
+█─██─██─██─██─██─█████─██─████─██─███─███─█████████─██─██─████─█─███─███─████─███─██─███
+█────██────██─██─█████─██───██─██████─███───██───██────██───██─█─███─███───██─█─█─██───█
+█─█████─█─███─██─██─██─██─████─██─███─█████─███████─█─███─████───███─███─████─────████─█
+█─█████─█─███────██────██───██────███─███───███████─█─███───███─███───██───███─█─███───█
+████████████████████████████████████████████████████████████████████████████████████████
+*/
