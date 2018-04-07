@@ -13,7 +13,7 @@
 	padding: 0 5%;
 	height: inherit;
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 60px;
 	margin:auto;
 }
 
@@ -32,10 +32,12 @@
     height: 18px;
     line-height: 20px;
     font-weight: 700;
+    text-align: center;
 }
 
 .about-description-main-text p {
 	padding: 0 8%;
+	text-align: center;
 }
 
 .about-description-main-text h2,
@@ -44,8 +46,8 @@
 }
 
 .about-description article {
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 20px;
+	margin-right: 20px;
 	text-align: justify;
 	font-size: 17px;
 	font-family: 'HELVETICAMEDIUM';
@@ -55,125 +57,14 @@
 	padding-bottom: 20px;
 }
 
-.about-description article p {
-	padding-bottom: 40px;
+.about-description article {
 	line-height: 26px;
 	font-size: 16px;
 }
 
-/*
-███████████████████████████████████████████████
-█───██─█─██────████████───██───██───██─████───█
-█─████─█─██─██──████████─████─████─███─████─███
-█───██─█─██────███───███─████─████─███─████───█
-███─██─█─██─██──████████─████─████─███─████─███
-█───██───██────█████████─███───███─███───██───█
-███████████████████████████████████████████████
-*/
-
-/*.about-sub-title {
-	height: 500px;
-    overflow: hidden;
+.about-description-text p {
+	text-align: left;
 }
-
-.about-sub-title .cover-bg img {
-	margin-top: 8%;
-}
-
-@media all and (max-width: 1118px) {
-
-	.about-sub-title {
-		height: 440px;
-	}
-}
-
-@media all and (max-width: 990px) {
-
-	.about-sub-title {
-		height: 390px;
-	}
-}
-
-@media all and (max-width: 876px) {
-
-	.about-sub-title {
-		height: 340px;
-	}
-}		
-
-@media all and (max-width: 743px) {
-
-	.about-sub-title {
-		height: 280px;
-	}
-}
-
-@media all and (max-width: 680px){
-	.about-sub-title {
-		height: 240px;
-	}
-
-}
-
-@media all and (max-width: 435px){
-	.about-sub-title {
-		height: 170px;
-	}
-}
-
-@media all and (max-width: 323px){
-	.about-sub-title {
-		height: 100px;
-	}
-}
-
-.about-sub-title .cj-container {
-	position: relative;
-	padding-left: 0;
-	background: transparent;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 100%;
-    overflow: hidden;
-    margin:auto;
-}
-
-.about-sub-title .cover-bg {
-	position: absolute;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	top: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	background-image: url('../img/overlay.png');
-	z-index: 4;
-	overflow: hidden;
-}
-
-.about-sub-title .about-video {
-	position: absolute;
-	top: -20%;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-image: url('../img/about-sub-title-bg.png');
-	-webkit-background-size: cover;
-	background-size: cover;
-	z-index: 0;
-}
-
-
-@media all and (max-width: 1024px) {
-
-	.about-sub-title .cover-bg img {
-		width: 40%;
-		margin:8% auto 0;
-	}
-}
-*/
 
 
 /*
@@ -193,10 +84,7 @@
 }
 
 .about-team .section-header {
-	margin: 0 5% 60px;
-	text-align: center;
-	font-size: 28px;
-	border-left: 0;
+	margin: 0 calc(5% + 20px) 40px;
 }
 
 .team-members {
@@ -207,6 +95,17 @@
 .team-member {
 	padding: 0 20px 60px;
 	cursor: pointer;
+}
+
+.team-member-photo {
+	background: rgba(176, 0, 11, 1);
+    background: -moz-linear-gradient(left, rgba(176, 0, 11, 1) 0%, rgba(246, 41, 12, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(176, 0, 11, 1) 0%, rgba(246, 41, 12, 1) 100%);
+    background: -o-linear-gradient(left, rgba(176, 0, 11, 1) 0%, rgba(246, 41, 12, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(176, 0, 11, 1) 0%, rgba(246, 41, 12, 1) 100%);
+    background: linear-gradient(to right, rgba(176, 0, 11, 1) 0%, rgba(246, 41, 12, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(176, 0, 11, 1)), color-stop(100%, rgba(246, 41, 12, 1)));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b0000b', endColorstr='#f6290c', GradientType=1);
 }
 
 .team-member-photo img {
@@ -230,20 +129,29 @@
 	font-size: 18px;
 	color: #999;
 	font-family: 'HELVETICAMEDIUM', sans-serif;
-	text-transform: capitalize;
 }
 
-.team-member article {
-	display: none;
-	width: 100px;
-	margin: auto;
-	font-family: 'HELVETICAMEDIUM';
-	text-align: justify;
-	line-height: 26px;
-	font-size: 16px;
+.team-member-photo {
+	position: relative;
 }
 
-.row.team-members {
-    margin-right: 0;
-    margin-left: 0;
+.team-member-photo article {
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	height: inherit;
+	width: inherit;
+	background-color: #000;
+	color: #fff;
+	font-family: 'HELVETICAMEDIUM', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 5%;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
