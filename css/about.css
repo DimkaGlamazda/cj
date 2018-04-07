@@ -13,12 +13,17 @@
 	padding: 0 5%;
 	height: inherit;
 	padding-top: 100px;
-	padding-bottom: 180px;
+	padding-bottom: 100px;
 	margin:auto;
 }
 
 .about-description img {
 	width: 100%;
+	margin-bottom: 60px;
+}
+
+.about-description-main-text {
+	padding-bottom: 40px;
 }
 
 .about-description-main-text h2 {
@@ -183,49 +188,54 @@
 
 .about-team .cj-container {
 	padding-left: 0;
-	padding: 180px 0;
+	padding: 0 0 10px;
 	margin:auto;
 }
 
 .about-team .section-header {
 	margin: 0 5% 60px;
+	text-align: center;
+	font-size: 28px;
+	border-left: 0;
 }
 
 .team-members {
 	overflow: hidden;
+	padding: 0 5% 0;
 }
 
 .team-member {
-	margin-bottom: 40px;
+	padding: 0 20px 60px;
+	cursor: pointer;
 }
 
-.team-member .team-member-photo {
-	display: block;
-	width: 300px;
-	height: 300px;
-	margin: 0 auto 30px;
-	-webkit-background-size: 300px auto;
-	background-size: 300px auto;
+.team-member-photo img {
+	width: 100%;
+}
+
+.team-member:hover .member-name {
+	text-decoration: underline;
 }
 
 .member-name {
-	width: 300px;
-	margin: 0 auto 20px;
-	font-size: 26px;
-	line-height: 25px;
-	font-family: 'Helvetica Neue Cyr Bold';
+	width: 100%;
+	margin: 20px auto 3px;
+    font-size: 22px;
+	font-family: 'HELVETICAMEDIUM', sans-serif;
 }
 
 .member-position {
-	width: 300px;
+	width: 100%;
 	margin: 0 auto 30px;
-	font-size: 24px;
-	line-height: 24px;
-	font-family: 'HELVETICAMEDIUM';
+	font-size: 18px;
+	color: #999;
+	font-family: 'HELVETICAMEDIUM', sans-serif;
+	text-transform: capitalize;
 }
 
 .team-member article {
-	width: 300px;
+	display: none;
+	width: 100px;
 	margin: auto;
 	font-family: 'HELVETICAMEDIUM';
 	text-align: justify;
