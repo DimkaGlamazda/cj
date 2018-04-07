@@ -116,7 +116,6 @@ $(function () {
     //      }  
     // } );
 
-
     var isIE = ((navigator.appName == 'Microsoft Internet Explorer') || (navigator.userAgent.indexOf('Trident/7.0') != -1) || (navigator.userAgent.indexOf('Edge/') != -1));
 
     if(isIE){

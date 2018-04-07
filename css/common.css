@@ -98,7 +98,6 @@ table {
     line-height: 20px;
     border-left: 4px #e30808 solid;
     font-family: 'Helvetica Neue Cyr Bold';
-    font-weight: 700;
 }
 
 .cj-btn-container {
@@ -125,7 +124,6 @@ table {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    font-weight: 700;
     font-family: 'Helvetica Neue Cyr Bold';
 }
 
