@@ -10,11 +10,32 @@
 */
 
 .about-description .cj-container {
-	padding-left: 0;
+	padding: 0 5%;
 	height: inherit;
-	padding-top: 180px;
+	padding-top: 100px;
 	padding-bottom: 180px;
 	margin:auto;
+}
+
+.about-description img {
+	width: 100%;
+}
+
+.about-description-main-text h2 {
+	margin-bottom: 20px;
+    font-size: 28px;
+    height: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.about-description-main-text p {
+	padding: 0 8%;
+}
+
+.about-description-main-text h2,
+.about-description-main-text p {
+	text-align: center;
 }
 
 .about-description article {
@@ -45,7 +66,7 @@
 ███████████████████████████████████████████████
 */
 
-.about-sub-title {
+/*.about-sub-title {
 	height: 500px;
     overflow: hidden;
 }
@@ -147,7 +168,7 @@
 		margin:8% auto 0;
 	}
 }
-
+*/
 
 
 /*
