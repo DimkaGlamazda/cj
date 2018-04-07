@@ -125,7 +125,10 @@ $(function () {
         $('.success-ico-color').css('background', '#fff');
     }
 
-    initMap();
+    if($('#map').length) {
+      initMap();  
+    }
+    
 
     function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
