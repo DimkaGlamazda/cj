@@ -87,6 +87,7 @@ $(function () {
   });
 
 
+  // $('.clients-reviews').parallax();
 
 
   /* scroll animation */
