@@ -12,7 +12,7 @@
 
 .services-description .cj-container{
     margin:auto;
-    padding: 100px 20% 0;
+    padding: 100px 15% 0;
     font-family: 'HELVETICAMEDIUM';
 }
 
@@ -29,14 +29,22 @@
 	overflow: hidden;
 	line-height: 26px;
 	text-align: left;
+	padding-right: 100px;
 }
 
 .services-description-list {
 	float: right;
-	margin: 8px 20px 0;
+	margin: 8px -100px 0 20px;
 	padding: 5px;
-	border-top: 1px solid #000;
-	width: 40%;
+	width: 50%;
+	font-size: 20px;
+}
+
+.services-description-list hr {
+	width: 70%;
+	margin: 0;
+	padding: 0;
+	background: #000;
 }
 
 .services-description-list p {
@@ -46,6 +54,7 @@
 .services-description-list ol {
 	list-style: decimal;
 	padding-left: 20px;
+	font-size: 17px;
 }
 
 /*
@@ -60,7 +69,7 @@
 
 .ather-services .cj-container {
 	margin: auto;
-	padding: 100px 5% 0;
+	padding: 100px 15% 0;
 }
 
 .ather-services-wrapper{
@@ -70,29 +79,26 @@
 .service-container {
 	height: inherit;
 	margin-bottom: 40px;
+	padding: 0 10px;
 }
 
 .sevice-wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	height: 100%;
-	margin: 0 20px;
-	padding: 10px;
+	margin: 0 20px ;
+	padding: 10px 20px 30px;
 	border: 1px #ccc solid;
 	-webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    background-color: rgba(241, 244, 246, 1);
+    background-color: rgba(252, 252, 252, 1);
 }
 
 .sevice-wrapper:hover {
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
     -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(241, 244, 246, 1);
 }
 
 .sevice-wrapper {
@@ -105,6 +111,7 @@
 	font-size: 20px;
     line-height: 20px;
     padding: 20px 0;
+    text-align: center;
 }
 
 .sevice-wrapper p {
@@ -113,16 +120,21 @@
 	color: #444;
 	font-weight: 100;
 	line-height: 24px;
+	font-size: 14px;
 }
 
 .sevice-wrapper ol {
+	display: block;
+	width: 70%;
 	list-style: disc;
+	margin: auto;
 }
 
 .sevice-wrapper ol li {
 	font-family: sans-serif;
 	color: #444;
-	line-height: 30px;
+	line-height: 24px;
+	font-size: 14px;
 }
 
 /*
