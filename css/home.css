@@ -876,6 +876,7 @@ p.partners-number-medium {
         text-align: center;
     }
 }
+
 @media all and (max-width: 680px) {
     .partners-next-container,
     .partners-prev-container{
