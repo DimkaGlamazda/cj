@@ -1,54 +1,4 @@
-/*
-██████████████████████████████████████
-█────███───██───██────██─█─██─████───█
-█─██──██─████─████─██─██─█─██─█████─██
-█─██──██───██───██─██─██─█─██─█████─██
-█─██──██─████─████─██─██─█─██─█████─██
-█────███───██─████────██───██───███─██
-██████████████████████████████████████
-*/
 
-.sevise-border {
-	padding: 30px;
-	margin: 0 5%;
-}
-
-
-
-.services-description .cj-container h2,
-.main-service .cj-container h2,
-.ather-services .cj-container .service-list-item h2 {
-	padding: 0 5%;
-	text-align: center;
-	font-size: 30px;
-	font-family: 'Helvetica Neue Cyr Bold';
-}
-
-.main-service .cj-container h2 span,
-.ather-services .cj-container .service-list-item h2 span {
-	display: inline-block;
-	padding: 9px 17px;
-	margin-right: 10px;
-	background-color: #e30808;
-	color: #fff;
-}
-
-.main-service .sevise-border{
-	padding-bottom: 0;
-}
-
-.services-description .cj-container ul,
-.ather-services .cj-container .service-list-item ul {
-	list-style: circle;
-	padding-bottom: 20px;
-	padding-left: 35px;
-}
-
-.services-description .cj-container article,
-.ather-services-wrapper.row .service-list-item article {
-	font-family: 'HELVETICAMEDIUM';
-	font-size: 20px;
-}
 
 /*
 ██████████████████████████████████████████████████████████████
@@ -60,46 +10,42 @@
 ██████████████████████████████████████████████████████████████
 */
 
-.services-description .cj-container {
-	padding-top: 180px;
-	padding-bottom: 180px;
-	margin:auto;
+.services-description .cj-container{
+    margin:auto;
+    padding: 100px 20% 0;
+    font-family: 'HELVETICAMEDIUM';
 }
 
-.services-description .cj-container article {
-	padding: 60px 5% 0;
+.services-description h2 {
+	margin-bottom: 20px;
+    font-size: 28px;
+    height: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
 }
 
-.services-description .cj-container p {
-	text-align: justify;
-	padding-bottom: 20px;
+.services-description-text {
+	overflow: hidden;
 	line-height: 26px;
+	text-align: left;
 }
 
-/*
-█████████████████████████████████████████████████████████████████████████████████████████████████████
-█─███──█────██───██─██─███████───██───██────██─█─██───██────██───███████────███─████────██────██─██─█
-█──█───█─██─███─███──█─███████─████─████─██─██─█─███─███─██─██─█████████─██──██─████─██─██─██─██─█─██
-█─█─█──█────███─███─█──██───██───██───██────██─█─███─███─█████───██───██────███─████─██─██─█████──███
-█─███──█─██─███─███─██─█████████─██─████─█─███───███─███─██─██─█████████─██──██─████─██─██─██─██─█─██
-█─███──█─██─██───██─██─███████───██───██─█─████─███───██────██───███████────███───██────██────██─██─█
-█████████████████████████████████████████████████████████████████████████████████████████████████████
-*/
-
-.main-service .cj-container {
-	padding-bottom: 180px;
-	margin:auto;
+.services-description-list {
+	float: right;
+	margin: 8px 20px 0;
+	padding: 5px;
+	border-top: 1px solid #000;
+	width: 40%;
 }
 
-.main-service p {
-	text-align: center;
-	font-family: 'HELVETICAMEDIUM';
-	font-size: 20px;
-	margin-bottom: 10px;
+.services-description-list p {
+	padding: 10px 0;
 }
 
-.main-service article {
-	padding-top: 60px;
+.services-description-list ol {
+	list-style: decimal;
+	padding-left: 20px;
 }
 
 /*
@@ -113,79 +59,90 @@
 */
 
 .ather-services .cj-container {
-	padding-bottom:180px; 
-	margin:auto;
+	margin: auto;
+	padding: 100px 5% 0;
 }
 
-.ather-services-wrapper.row {
-	margin-right: 0;
-    margin-left: 0;
-    padding: 0 5%;
-    height: inherit;
-}
-
-.ather-services-wrapper.row .col-sm-12,
-.ather-services-wrapper.row .col-md-6,
-.ather-services-wrapper.row .col-lg-4 {
-	padding-left: 0;
-	padding-right: 0;
+.ather-services-wrapper{
 	height: inherit;
 }
 
-.ather-services-wrapper.row .sevise-border {
-	margin: 0;
-	width: 95%;
-	height: 100%;
+.service-container {
+	height: inherit;
+	margin-bottom: 40px;
 }
 
-.ather-services-wrapper.row .service-list-item {
+.sevice-wrapper {
 	display: flex;
-}
-
-.ather-services-wrapper.row .service-list-item:nth-child(1) {
-	justify-content: flex-start;
-}
-
-.ather-services-wrapper.row .service-list-item:nth-child(2) {
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin: 0 20px;
+	padding: 10px;
+	border: 1px #ccc solid;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: rgba(241, 244, 246, 1);
 }
 
-.ather-services-wrapper.row .service-list-item:nth-child(3) {
-	justify-content: flex-end;
+.sevice-wrapper:hover {
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.1);
 }
 
-.ather-services-wrapper.row .service-list-item article {
-	padding-top: 30px;
+.sevice-wrapper {
+	font-family: 'HELVETICAMEDIUM';
+	line-height: 20px;
+	color: #444;
+}
+
+.sevice-wrapper h2 {
+	font-size: 20px;
+    line-height: 20px;
+    padding: 20px 0;
+}
+
+.sevice-wrapper p {
+	text-align: center;
+	font-family: sans-serif;
+	color: #444;
+	font-weight: 100;
+	line-height: 24px;
+}
+
+.sevice-wrapper ol {
+	list-style: disc;
+}
+
+.sevice-wrapper ol li {
+	font-family: sans-serif;
+	color: #444;
+	line-height: 30px;
 }
 
 /*
-█████████████████████████████████████████████████████████████████████████████
-█────██────██─████─█████████───██────███████────██────██───██───██────██─██─█
-█─██─██─██─██─████─██████████─███─██─███████─██─██─██─███─████─███─██─██──█─█
-█─█████────██─████─████───███─███─██─██───██────██─██████─████─███─██─██─█──█
-█─██─██─██─██─████─██████████─███─██─███████─██─██─██─███─████─███─██─██─██─█
-█────██─██─██───██───████████─███────███████─██─██────███─███───██────██─██─█
-█████████████████████████████████████████████████████████████████████████████
+█████████████████████████████████████████████████████████
+█────██────██─██─██────███───██───██───██────██─██─██───█
+█─██─██─██─██──█─██─██──███─████─████─███─██─██──█─██─███
+█─█████─██─██─█──██─██──███─████─████─███─██─██─█──██───█
+█─██─██─██─██─██─██─██──███─████─████─███─██─██─██─████─█
+█────██────██─██─██────███───███─███───██────██─██─██───█
+█████████████████████████████████████████████████████████
 */
 
-.services-call-to-action .cj-container{
-	padding-bottom:180px; 
+.services-conditions .cj-container { 
 	margin:auto;
+    padding: 100px 5% 0;
+    font-family: 'HELVETICAMEDIUM';
 }
 
-.services-call-to-action .cj-container h3{
-    font-size: 54px;
-    line-height: 54px;
-    text-align: center;
-    font-family: 'HELVETICAMEDIUM';
-    text-transform: uppercase;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-    background:  -webkit-gradient(linear, left, right, color-stop(50%, #b0010b), color-stop(50%, #f8292d));
-    background: -webkit-linear-gradient(#b0010b 50%, #f8292d 50%) no-repeat;
-    background: linear-gradient(90deg, #b0010b 50%, #b0010b 50%, #f8292d);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-     background-clip: text;
-	color: #f8292d;
+.conditions-main-description p {
+	line-height: 26px;
+	text-align: center;
+	padding: 0 8% 20px;
 }
