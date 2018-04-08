@@ -187,7 +187,7 @@ table {
 }
 
 .services-title-bg {
-    background: url('../img/pages/DSC_3272.jpg')100% 59% no-repeat;
+    background: url('../img/pages/DSC_3272.jpg')100% 53% no-repeat;
     background-size: cover; 
 }
 
@@ -213,7 +213,7 @@ table {
 }
 
 .page-titke-overlay {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     height: 500px;
     width: 100%;
 }

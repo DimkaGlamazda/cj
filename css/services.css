@@ -360,36 +360,100 @@
 */
 
 .services-partners .cj-container {
-	padding: 0 5%;
+	padding: 0 0 100px;
+	margin:auto; 
+}
+
+.services-partners img {
+	width: 70%;
 	margin:auto; 
 }
 
 .services-partners .section-header {
 	margin-bottom: 60px;
+	margin-left: 5%;
 }
 
-.services-partners .owl-dots {
+.client-img-wrapper {
 	display: flex;
 	justify-content: center;
-	margin-top: 35px;
+	align-items: center;
+	padding-left: 5%;
 }
 
-.services-partners .owl-dot{
-	background-color: #999 !important;
-	width: 10px;
-	height: 10px;
-	margin: 0 7px;
-	border-radius: 30px;
+/*
+██████████████████████████████████████
+█────██───██─█─██───██───██─███─██───█
+█─██─██─████─█─███─███─████─███─██─███
+█────██───██─█─███─███───██─█─█─██───█
+█─█─███─████───███─███─████─────████─█
+█─█─███───███─███───██───███─█─███───█
+██████████████████████████████████████
+*/
+
+.clients-reviews {
+	position: relative;
+    z-index: 1;
 }
 
-.services-partners .owl-dot:focus {
-	outline:0;
+.clients-reviews .cj-container{
+	margin: auto;
+	background: #fff;
+	padding: 70px 0;
+	z-index: 1;
 }
 
-.services-partners .owl-carousel {
-	width: 90%;
+.clients-reviews .section-header {
+	margin-bottom: 60px;
+	margin-left: 5%;
 }
 
-.services-partners button.owl-dot.active{
-	background-color: #222 !important;
+.review-item {
+	margin-left: 5%;
+	padding: 0 10%;
+}
+
+.client-review {
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: 100;
+    line-height: 30px;
+	text-align: center;
+	font-weight: 100;
+	padding: 0;
+}
+
+.client-info {
+	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	flex-direction: column;
+	padding: 30px 5%;
+	font-size: 22px;
+	line-height: 28px;
+}
+
+.client-photo-wrapper {
+	width: 100px;
+	height: 100px;
+	padding-bottom: 10px;
+}
+
+.client-photo-wrapper img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+.client-name, 
+.client-position {
+	text-align: center;
+	font-family: 'Helvetica Neue Cyr Bold';
+	font-size: 18px;
+    line-height: 22px;
+}
+
+.client-position {
+	color: #0da0e3;
+	font-size: 16px;
 }
