@@ -120,7 +120,7 @@
 
 .ather-services .cj-container {
 	margin: auto;
-	padding: 100px 5% 0;
+	padding: 100px 5% 70px;
 	font-family: 'HELVETICAMEDIUM';
 }
 
@@ -130,7 +130,7 @@
 
 .ather-services-wrapper {
 	height: inherit;
-	padding: 0 15%;
+	padding: 0 10%;
 }
 
 .service-container {
@@ -142,7 +142,7 @@
 .sevice-wrapper {
 	height: 100%;
 	margin: 0 20px ;
-	padding: 10px 20px 30px;
+	padding: 10px 20px 40px;
 	border: 1px #ccc solid;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -180,9 +180,10 @@
 	text-align: center;
 	font-family: sans-serif;
 	color: #444;
-	font-weight: 100;
 	line-height: 24px;
-	font-size: 14px;
+	font-size: 15px;
+	width: 70%;
+	margin: auto;
 }
 
 .sevice-wrapper ol {
@@ -196,264 +197,5 @@
 	font-family: sans-serif;
 	color: #444;
 	line-height: 24px;
-	font-size: 14px;
-}
-
-
-
-/*
-██████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-█────██────██────████──██───██────██───██───███████───██─██─███████─██─██─█─██────███─███──█────███───██────██───█
-█─██─██─██─██─██─█████─██─████─██─███─███─██████████─███──█─███████──█─██─█─██─██──██──█───█─██──██─████─██─██─███
-█────██────██─██─█████─██───██─██████─███───██───███─███─█──██───██─█──██─█─██────███─█─█──█────███───██────██───█
-█─█████─█─███─██─██─██─██─████─██─███─█████─████████─███─██─███████─██─██─█─██─██──██─███──█─██──██─████─█─█████─█
-█─█████─█─███────██────██───██────███─███───███████───██─██─███████─██─██───██────███─███──█────███───██─█─███───█
-██████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-*/
-.projects-in-numbers .cj-container {
-	padding: 100px 0;
-	margin: auto;
-}
-
-.projects-in-numbers .section-header {
-	margin: 0 5% 60px;
-}
-
-.projects-wrapper {
-	padding: 0 5%;
-}
-
-.partners-number-medium {
-	font-size: 80px;
-}
-.partners-number-medium .achivment-amount {
-
-}
-
-.partners-number-large .achivment-amount {
-	font-size: 100px;
-}
-
-.project {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	height: 250px;
-	font-family: 'Helvetica Neue Cyr Bold';
-}
-
-.project h3 {
-	display: flex;
-	justify-content: center;
-	height: 80px;
-	text-align: center;
-}
-
-.project p {
-	text-align: center;
-}
-
-.project-description {
-	display: block;
-	font-size: 38px;
-	height: 70px;
-	line-height: 70px;
-}
-
-.middle-project-border {
-	border-left: 1px #e1dede solid;
-	border-right: 1px #e1dede solid;
-}
-
-.partners-number-gradient {
-	background: linear-gradient(90deg, #b0010b 50%, #b0010b 50%, #f8292d);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: #f8292d;
-}
-
-@media all and (max-width: 767px) {
-
-	.projects-in-numbers .section-header {
-		margin: 0 5% 20px;
-	}
-
-	.projects-wrapper.row {
-		padding-left: calc(5% + 14px);
-	}
-
-	.project {
-		display: flex;
-		justify-content: space-between;
-		padding-bottom: 15px;
-		padding-top: 15px;
-		border-top: #e1dede solid 1px;
-		width: 100%;
-		height: 100%;
-		margin: 0;
-	}
-
-	.project p {
-		display: inline-block;
-		font-family: sans-serif;
-		font-size: 19px;
-		line-height: 25px;
-		margin-bottom: 0;
-		text-align: center;
-		font-weight:100;
-		height: 25px;
-	}
-
-	.project h3 {
-		font-size: 17px;
-		line-height: 25px;
-		text-align: center;
-		height: 25px;
-		margin-bottom: 0;
-	}
-
-	.project-description {
-		display: inline-block;
-		line-height: 25px;
-		font-size: 17px;
-	}
-
-	.middle-project-border {
-		border-left: none;
-		border-right: none;
-	}
-
-	.partners-number-medium .achivment-amount {
-		font-size: 17px;
-		height: 25px;
-		line-height: 25px;
-	}
-
-	.partners-number-large .achivment-amount {
-		height: 25px;
-		line-height: 25px;
-		font-size: 25px;
-	}
-
-	.partners-number-medium .achivment-amount .project-description {
-		display: inline-block;
-		font-size: 19px;
-		height: 25px;
-		font-family: sans-serif;
-		font-weight: 100;
-	}
-
-	.project:last-child {
-		border-bottom: #e1dede solid 1px;
-	}
-
-}
-
-
-/*
-█████████████████████████████████████████████
-█────██────██────██───██─██─██───██────██───█
-█─██─██─██─██─██─███─███──█─██─████─██─██─███
-█────██────██────███─███─█──██───██────██───█
-█─█████─██─██─█─████─███─██─██─████─█─█████─█
-█─█████─██─██─█─████─███─██─██───██─█─███───█
-█████████████████████████████████████████████
-*/
-
-.services-partners .cj-container {
-	padding: 0 0 100px;
-	margin:auto; 
-}
-
-.services-partners img {
-	width: 70%;
-	margin:auto; 
-}
-
-.services-partners .section-header {
-	margin-bottom: 60px;
-	margin-left: 5%;
-}
-
-.client-img-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-left: 5%;
-}
-
-/*
-██████████████████████████████████████
-█────██───██─█─██───██───██─███─██───█
-█─██─██─████─█─███─███─████─███─██─███
-█────██───██─█─███─███───██─█─█─██───█
-█─█─███─████───███─███─████─────████─█
-█─█─███───███─███───██───███─█─███───█
-██████████████████████████████████████
-*/
-
-.clients-reviews {
-	position: relative;
-    z-index: 1;
-}
-
-.clients-reviews .cj-container{
-	margin: auto;
-	background: #fff;
-	padding: 70px 0;
-	z-index: 1;
-}
-
-.clients-reviews .section-header {
-	margin-bottom: 60px;
-	margin-left: 5%;
-}
-
-.review-item {
-	margin-left: 5%;
-	padding: 0 10%;
-}
-
-.client-review {
-	font-family: sans-serif;
-	font-size: 20px;
-	font-weight: 100;
-    line-height: 30px;
-	text-align: center;
-	font-weight: 100;
-	padding: 0;
-}
-
-.client-info {
-	font-family: sans-serif;
-	display: flex;
-	align-items: center;
-	justify-content:center;
-	flex-direction: column;
-	padding: 30px 5%;
-	font-size: 22px;
-	line-height: 28px;
-}
-
-.client-photo-wrapper {
-	width: 100px;
-	height: 100px;
-	padding-bottom: 10px;
-}
-
-.client-photo-wrapper img {
-	width: 100%;
-	border-radius: 50%;
-}
-
-.client-name, 
-.client-position {
-	text-align: center;
-	font-family: 'Helvetica Neue Cyr Bold';
-	font-size: 18px;
-    line-height: 22px;
-}
-
-.client-position {
-	color: #0da0e3;
-	font-size: 16px;
+	font-size: 15px;
 }
