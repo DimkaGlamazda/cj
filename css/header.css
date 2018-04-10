@@ -56,7 +56,9 @@
 }
 
 .header-navigation a{
-	font-family: 'Helvetica Neue Cyr Bold';
+	/*font-family: 'Helvetica Neue Cyr Bold';*/
+	font-family: 'Jaldi', sans-serif;
+	font-weight: 700;
 }
 
 .header-languages{
@@ -64,7 +66,9 @@
 }
 
 .header-languages a{
-	font-family: 'Helvetica Neue Cyr Bold';
+	/*font-family: 'Helvetica Neue Cyr Bold';*/
+	font-family: 'Jaldi', sans-serif;
+	font-weight: 700;
 }
 
 .menu-control{
@@ -239,7 +243,9 @@
 		margin: 0;
 		z-index: 2;
 		cursor: pointer;
-		font-family: 'Helvetica Neue Cyr Bold';
+		/*font-family: 'Helvetica Neue Cyr Bold';*/
+		font-family: 'Jaldi', sans-serif;
+		font-weight: 700;
 	}
 
 	.lang-icon{
@@ -316,10 +322,11 @@
 
 	.header-controls-title{
 		position: relative;
-		font-family: 'Helvetica Neue Cyr Bold';
+		/*font-family: 'Helvetica Neue Cyr Bold';*/
+		font-family: 'Jaldi', sans-serif;
 		font-size: 16px;
 		color: #fff;
-		font-weight: 800;
+		font-weight: 700;
 	}
 
 	.header-navigation li{

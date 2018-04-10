@@ -13,7 +13,8 @@
     font-size: 25px;
     color: #fff;
     opacity: 0.5;
-    font-family: 'Helvetica Neue Cyr Bold';
+    /*font-family: 'Helvetica Neue Cyr Bold';*/
+    font-family: 'Jaldi', sans-serif;
 }
 
 @media all and (min-width: 1400px){
@@ -29,7 +30,8 @@
     color:#fff;
     text-align: center;
     opacity: 0.4;
-     font-family: 'Helvetica Neue Cyr Bold';
+     /*font-family: 'Helvetica Neue Cyr Bold';*/
+     font-family: 'Jaldi', sans-serif;
 }
 .social-links{
     display: flex;

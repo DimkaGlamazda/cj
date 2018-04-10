@@ -105,7 +105,7 @@ $(function () {
         geocoder = new google.maps.Geocoder();
         var mapOptions = {
             center: {'lat': 50.448087, 'lng': 30.425054},
-            zoom: 10,
+            zoom: 4,
             styles: [{
                 "featureType": "all",
                 "elementType": "labels.text.fill",
