@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/contacts.css">
-    <link rel="stylesheet" href="css/projects.css">
+    <!-- <link rel="stylesheet" href="css/projects.css"> -->
 
     <script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
@@ -78,10 +78,8 @@
             </div>
         </div>
     </header><!-- HEADER -->
-
-    <br><br><br>
-
-    <section class="page-title parallax-window" data-parallax="scroll" data-image-src="img/about-title-bg.jpg">
+    
+    <section class="page-title contacts-title-bg" data-parallax="scroll">
         <div class="page-titke-overlay">
             <div class="cj-container">
                 <h1>Contacts</h1>
@@ -97,126 +95,95 @@
     <section class="addresses-container">
         <div class="cj-container">
             <h2 class="section-header">Contact Information</h2>
-            <div class="row no-gutters">
+            <div class="row no-gutters addresses-wrapper">
                 <div class="col-md-6 map-container">
                     <div id="map" class="contacts-map"></div>
                 </div>
                 <div class="col-md-6 addresses">
-                    <div class="address-item">
-                        <h3>Kiev</h3>
-                        <p>Ukraine, 03067, Kiev, V. Gavela blvd, 4 office 20</p>
+                    <div class="address-item" data-css-animate="trigger">
+                        <h3>Kiev <img id="mp0" class="map-point" src="img/map-icon.png"></h3>
+                        <p class="address-line">V. Gavela blvd, 4 office 20</p>
+                        <p class="email-line">gldmvl@gmail.com</p>
+                        <p class="phone-line">+3897732129</p>
+                        <hr>
                     </div>
-                    <div class="address-item">
-                        <h3>Mine</h3>
-                        <p>Address</p>
+                    <div class="address-item" data-css-animate="trigger">
+                        <h3>Minsk <img id="mp1" class="map-point" src="img/map-icon.png"></h3>
+                        <p class="address-line">Gamarnikova St., 30, 258, 3/19</p>
+                        <p class="email-line">gldmvl@gmail.com</p>
+                        <p class="phone-line">+3897732129</p>
+                        <hr>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="our-contacts">
-    	<div class="cj-container">
-    		<div class="row our-contacts-wrapper">
-    			<div class="col-lg-6 col-md-12 order-lg-last order-md-first">
-    				<img src="img/about-title-bg.jpg" alt="????">
-    			</div>
-    			<div  class="col-lg-6 col-md-12 order-lg-first order-md-last">
-    				<div data-css-animate="trigger" class="contact-offices">
-    					<div class="contact-office-title">CoinJapan KIEV</div>
-    					<div class="contact-office-adress">Adres</div>
-    					<div class="contact-office-phone">+00 00 00 00 00</div>
-    					<div class="contact-office-email">info@coinjapan.com</div>
-    				</div>
-    				<div data-css-animate="trigger" class="contact-offices">
-    					<div class="contact-office-title">CoinJapan MINSK</div>
-    					<div class="contact-office-adress">Adres</div>
-    					<div class="contact-office-phone">+00 00 00 00 00</div>
-    					<div class="contact-office-email">info@coinjapan.com</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section><!-- OUR-CONTACTS -->
 
     <section class="contact-form">
     	<div class="cj-container">
     		<h2 class="section-header" data-css-animate="trigger">Сontact Us Now</h2>
-    		<div class="contact-form-bg">
-    			<div class="contact-form-wrapper shadow-wrapper">
-    				<form action="POST">
-    					<div class="cj-form-group">
-    						<label class="contact-form-label contact-form-required" for="name">Name</label>
-    						<input class="contact-form-input" type="text" name="name" id="name">
-    					</div>
-    					<div class="cj-form-group">
-    						<label class="contact-form-label contact-form-required" for="email">Mail ID</label>
-    						<input class="contact-form-input" type="text" name="email" id="email">
-    					</div>
-    					<div class="cj-form-group">
-    						<label class="contact-form-label" for="phone">Telephone</label>
-    						<input class="contact-form-input" type="text" name="phone" id="phone">
-    					</div>
-    					<div class="cj-form-group">
-    						<label class="contact-form-label" for="company">Company Name</label>
-    						<input class="contact-form-input" type="text" name="company" id="company">
-    					</div>
-    					<div class="cj-form-group">
-    						<label class="contact-form-label" for="message">Message</label>
-    						<textarea class="contact-form-textarea" name="message" id="message"></textarea>
-    					</div>
-    					<div class="cj-form-group row">
-    						<div class="col-sm-12 col-md-12 col-lg-6"></div>
-    						<div class="col-sm-12 col-md-12 col-lg-6">
-    							<div class="cj-btn-container">
-    								<button type="submit" class="cj-btn" data-css-animate="trigger"><span>Send</span></button>
-					            </div>
-    						</div>
-    					</div>
-    				</form>
-    			</div>
-    		</div>
-    	</div>
+    		<div class="row no-gutters form-content-wrapper">
+                <div class="col-md-6">
+                    <div class="contact-form-wrapper">
+                        <form action="POST">
+                            <div class="cj-form-group">
+                                <input class="contact-form-input" type="text" name="name" id="name" placeholder="Name">
+                            </div>
+                            <div class="cj-form-group">
+                                <input class="contact-form-input" type="text" name="email" id="email" placeholder="Mail ID">
+                            </div>
+                            <div class="cj-form-group">
+                                <textarea class="contact-form-textarea" name="message" id="message"></textarea>
+                            </div>
+                            <div class="cj-form-group row">
+                                <div class="col-sm-12 col-md-12 col-lg-6"></div>
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="cj-btn-container">
+                                        <button type="submit" class="cj-btn" data-css-animate="trigger"><span>Send</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>    
+                <div class="col-md-6">
+                    <img src="img/pages/DSC_3165.jpg" alt="do">
+                </div>  
+            </div>
+        </div>
     </section><!-- CONTACT-FORM -->
 
-
-    <span id="mp0">ссылка 1</span>
-    <span href="#" id="mp1">ссылка 2</span>
-    <span href="#" id="mp2">ссылка 3</span>
-
-
-
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="row">
-            <div class="col-12">
-                <span class="footer-connect-us">Connect with us</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 col-sm-12">
-                <div class="social-links">
-                    <a href="#" class="fb-icon"></a>
-                    <a href="#" class="twitter-icon"></a>
-                    <a href="#" class="telegram-icon"></a>
-                    <a href="#" class="youtube-icon"></a>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-12">
+                    <span class="footer-connect-us">Connect with us</span>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="copyright">© 2018 CoinJapan</div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="social-links">
+                        <a href="#" class="fb-icon"></a>
+                        <a href="#" class="twitter-icon"></a>
+                        <a href="#" class="telegram-icon"></a>
+                        <a href="#" class="youtube-icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright">© 2018 CoinJapan</div>
+                </div>
+            </div>
+            <div class="footer-go-to-top" data-go-to-top="btn">
+                <img src="img/arrowGoToTop.png" alt="go to top">
             </div>
         </div>
-        <div class="footer-go-to-top" data-go-to-top="btn">
-            <img src="img/arrowGoToTop.png" alt="go to top">
-        </div>
-    </div>
-</footer>
+    </footer>
 
-<div id="preloader"></div>
-<script src="js/main.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBwY9f3meuCBvcVK20P8RkGlxYQMbhz08"></script>
+    <div id="preloader"></div>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBwY9f3meuCBvcVK20P8RkGlxYQMbhz08"></script>
 </body>
 </html>

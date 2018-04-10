@@ -10,15 +10,51 @@
 
 .addresses-container .cj-container {
 	margin: auto;
-	padding: 5%;
+	padding: 100px 0 0;
+}
+
+.addresses-container .section-header {
+	margin: 0 5% 60px;
+}
+
+.addresses-wrapper {
+	padding: 0 5% 0;
 }
 
 .map-container {
 
 }
 
-.addresses {
 
+.addresses .address-item {
+	padding: 50px 10% 0;
+	font-size: 20px;
+}
+
+.map-point {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.address-item hr {
+	display: block;
+    margin: 10px auto;
+    background-color: #000;
+}
+
+.address-item h3 {
+	position: relative;
+	font-size: 24px;
+	font-weight: 600;
+	padding: 15px 0;
+}
+
+.address-item p {
+	padding: 5px 0;
 }
 
 /*
@@ -32,7 +68,7 @@
 */
 
 .contact-form .cj-container {
-	padding: 0  5% 180px;
+	padding: 100px  0 110px;
 	margin: auto;
 }
 
@@ -40,19 +76,17 @@
 	margin: 0 5% 60px;
 }
 
-.contact-form-bg {
+.form-content-wrapper {
+	padding: 0 5% 0;
 
+}
+
+.form-content-wrapper img {
+	width: 100%;
 }
 
 .contact-form-wrapper {
-	width: 60%;
-	margin: auto;
-	padding: 40px 60px;
-}
-
-.contact-form-label {
-	display: inline-block;
-	margin-bottom: 5px;
+	padding: 50px 10%;
 }
 
 .contact-form-input,
@@ -60,7 +94,6 @@
 	display: block;
 }
 
-.contact-form-label,
 .contact-form-input,
 .contact-form-textarea {
 	font-family: 'Helvetica Neue Cyr Bold';
@@ -74,25 +107,12 @@
 	border-right:0;
 	border-left:0;
 	border-bottom: 1px solid #000;
-	margin-bottom: 15px;
+	margin: 0 0 30px;
 }
 
 .contact-form-input:focus,
 .contact-form-textarea:focus {
 	outline: none;
-}
-
-.contact-form-required {
-	position: relative;
-}
-
-.contact-form-required:after {
-	content: '*';
-	position: absolute;
-	top:0;
-	right:-7px;
-	color: #ff0101;
-	font-size: 16px;
 }
 
 .contact-form-textarea {
@@ -101,12 +121,11 @@
 	width: 100%;
 	height: 90px;
 	resize: none;
-	padding: 5px 10px;
+	padding: 20px 10px;
 }
 
 .contact-form .cj-btn-container {
 	justify-content: flex-end;
-	margin-top: 40px;
 }
 
 button.cj-btn{
