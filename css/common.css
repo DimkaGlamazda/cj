@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     background-color: #FAFAFA !important;
+    font-family: sans-serif;
 }
 
 ol, ul {
@@ -190,6 +191,12 @@ table {
     background: url('../img/pages/DSC_3272.jpg')100% 53% no-repeat;
     background-size: cover; 
 }
+
+.contacts-title-bg {
+    background: url('../img/pages/DSC_3331.jpg')100% 53% no-repeat;
+    background-size: cover; 
+}
+
 
 .page-title .cj-container {
     display: flex;
