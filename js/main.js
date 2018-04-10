@@ -97,8 +97,8 @@ $(function () {
 
     var geocoder;
     var map;
-    var query = new Array('Ukraine, 03067, Kiev, V. Gavela blvd, 4', 'гамарника ст., 30 минск');
-    var idArr = new Array('mp0', 'mp1');
+    var query = new Array('г. Минск, улица Гамарника, 30', 'бульвар Вацлава Гавела, 4, Киев, 02000');
+    var idArr = new Array('mp1', 'mp0');
 
 
     function initialize() {
