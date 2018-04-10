@@ -8,48 +8,17 @@
 ███████████████████████████████████████████████████████████████████
 */
 
-.our-contacts {
-
-}
-
-.our-contacts .cj-container {
-	padding: 180px 5%;
+.addresses-container .cj-container {
 	margin: auto;
+	padding: 5%;
 }
 
-.row.our-contacts-wrapper {
-	margin-left: 0;
-	margin-right: 0;
-	padding: 0 5%;
+.map-container {
+
 }
 
-.row.our-contacts-wrapper img {
-	width: 100%;
-}
+.addresses {
 
-.contact-offices {
-	font-family: 'Helvetica Neue Cyr Bold';
-	font-size: 16px;
-	line-height: 27px;
-}
-
-.contact-offices:nth-child(1) {
-	margin-bottom: 40px;
-}
-
-.contact-office-title {
-	font-size: 20px;
-	line-height: 27px;
-	margin-bottom: 20px;
-}
-
-.contact-office-adress, 
-.contact-office-phone {
-	margin-bottom: 10px;
-}
-
-.contact-office-email {
-	color: #ff0101;
 }
 
 /*
