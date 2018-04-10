@@ -140,6 +140,7 @@
 }
 
 .sevice-wrapper {
+	position: relative;
 	height: 100%;
 	margin: 0 20px ;
 	padding: 10px 20px 40px;
@@ -149,6 +150,19 @@
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	background-color: rgba(252, 252, 252, 1);
+}
+
+.sevice-wrapper-overlay {
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .sevice-wrapper:hover {
