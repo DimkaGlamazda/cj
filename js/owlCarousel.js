@@ -23,7 +23,7 @@ $.cj.owlCarousel = {
                     },
                     1000: {
                         items: 3,
-                        nav: true
+                        nav: false
                     }
                 }
             });
@@ -37,11 +37,11 @@ $.cj.owlCarousel = {
             });
         }
 
-        var sliderClients = $('#slider-clients');
+        var sliderClients = $('.owl-carousel-2');
 
         if(sliderClients.length != 0)
         {
-            owl.owlCarousel({
+            sliderClients.owlCarousel({
                 nav: false,
                 loop: true,
                 responsiveClass: true,
