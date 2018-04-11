@@ -5,7 +5,7 @@ $.cj.owlCarousel = {
 
     init : function () {
 
-        var owl = $('.owl-carousel');
+        var owl = $('.owl-carousel.index-partners-slider');
 
         if(owl.length != 0) {
             owl.owlCarousel({
@@ -37,7 +37,7 @@ $.cj.owlCarousel = {
             });
         }
 
-        var sliderClients = $('.owl-carousel-2');
+        var sliderClients = $('.owl-carousel.owl-carousel-2');
 
         if(sliderClients.length != 0)
         {
@@ -45,6 +45,7 @@ $.cj.owlCarousel = {
                 nav: false,
                 loop: true,
                 responsiveClass: true,
+                items: 3,
                 responsive: {
                     0: {
                         items: 1,
@@ -59,6 +60,17 @@ $.cj.owlCarousel = {
                         nav: false
                     }
                 }
+            });
+        }
+
+        var reviews_slider = $('.owl-carousel.review-clients-slider')
+
+        if(reviews_slider.length != 0){
+            sliderClients.owlCarousel({
+                nav: false,
+                loop: true,
+                // items : 1,
+                responsiveClass: true,
             });
         }
     }
