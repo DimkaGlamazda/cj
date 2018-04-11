@@ -13,7 +13,7 @@
 .services-description .cj-container{
 	margin:auto;
 	padding: 100px 15% 0;
-	font-family: 'HELVETICAMEDIUM';
+	/*font-family: 'HELVETICAMEDIUM';*/
 
 }
 
@@ -71,7 +71,7 @@
 	margin:auto;
 	padding: 100px 0 0;
 	background-color: #fff;
-	font-family: 'HELVETICAMEDIUM';
+	/*font-family: 'HELVETICAMEDIUM';*/
 }
 
 .services-moto {
@@ -101,7 +101,7 @@
 	font-size: 20px;
 	line-height: 30px;
 	font-weight: 100;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
 }
 
 .services-steps .steps-img img{
@@ -121,7 +121,7 @@
 .ather-services .cj-container {
 	margin: auto;
 	padding: 100px 5% 70px;
-	font-family: 'HELVETICAMEDIUM';
+	/*font-family: 'HELVETICAMEDIUM';*/
 }
 
 .ather-services .section-header {
@@ -173,7 +173,7 @@
 }
 
 .sevice-wrapper {
-	font-family: 'HELVETICAMEDIUM';
+	/*font-family: 'HELVETICAMEDIUM';*/
 	line-height: 20px;
 	color: #444;
 }
@@ -192,7 +192,7 @@
 
 .sevice-wrapper p {
 	text-align: center;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
 	color: #444;
 	line-height: 24px;
 	font-size: 15px;
@@ -208,7 +208,7 @@
 }
 
 .sevice-wrapper ol li {
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
 	color: #444;
 	line-height: 24px;
 	font-size: 15px;
