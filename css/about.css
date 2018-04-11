@@ -48,7 +48,7 @@
 	margin-right: 20px;
 	text-align: justify;
 	font-size: 17px;
-	font-family: 'HELVETICAMEDIUM';
+	/*font-family: 'HELVETICAMEDIUM';*/
 }
 
 .about-description article h2.section-header {
@@ -122,7 +122,7 @@
 	width: 100%;
 	margin: 20px auto 3px;
     font-size: 22px;
-	font-family: 'HELVETICAMEDIUM', sans-serif;
+	/*font-family: 'HELVETICAMEDIUM', sans-serif;*/
 }
 
 .member-position {
@@ -130,7 +130,7 @@
 	margin: 0 auto 30px;
 	font-size: 18px;
 	color: #999;
-	font-family: 'HELVETICAMEDIUM', sans-serif;
+	/*font-family: 'HELVETICAMEDIUM', sans-serif;*/
 }
 
 .team-member-photo {
@@ -148,7 +148,7 @@
 	width: inherit;
 	background-color: #000;
 	color: #fff;
-	font-family: 'HELVETICAMEDIUM', sans-serif;
+	/*font-family: 'HELVETICAMEDIUM', sans-serif;*/
 	font-size: 14px;
 	line-height: 20px;
 	padding: 5%;

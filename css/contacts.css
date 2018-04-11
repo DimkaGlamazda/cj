@@ -13,8 +13,13 @@
 	padding: 100px 0 0;
 }
 
+.contact-form-padding {
+	padding: 0 5%;
+}
+
+
 .addresses-wrapper {
-	padding: 0 5% 60px;
+	padding: 0 5% 60px ;
 }
 
 .addresses .address-item {
@@ -71,12 +76,17 @@
 	
 }*/
 
-.form-content-wrapper img {
+
+.contact-form-side-img-wrapper img {
 	width: 100%;
 }
 
+.contact-form-side-img-wrapper {
+	padding-left: 5%;
+}
+
 .contact-form-wrapper {
-	padding: 0 5%;
+	padding: 0 5% 0 0;
 }
 
 .cj-form-group {
