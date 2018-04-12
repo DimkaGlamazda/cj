@@ -288,7 +288,7 @@ table {
     background-size: 100%;
     display: block;
     width: 11px;
-    top: 0;
+    top: 5px;
     right: -23px;
     height: 10px;
 }
@@ -2550,7 +2550,7 @@ button.cj-btn:focus {
 
 .partners-page-wanted .cj-container {
     margin: auto;
-    padding: 40px 0 100px;
+    padding: 0px 0 100px;
 }
 
 .partners-page-wanted .section-header {
