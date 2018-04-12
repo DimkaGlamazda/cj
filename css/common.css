@@ -208,6 +208,12 @@ table {
     background-size: cover; 
 }
 
+
+.projects-title-bg {
+    background: url('../img/pages/DSC_3244.jpg')100% 53% no-repeat;
+    background-size: cover; 
+    
+}
 .page-title .cj-container {
     display: flex;
     flex-direction: column;
