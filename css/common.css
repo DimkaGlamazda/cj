@@ -2159,6 +2159,15 @@ button.cj-btn:focus {
     outline: none;
 }
 
+.form-side-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-side-img img {
+    width: 60%;
+}
+
 
 /*
 █████████████████████████████
@@ -2561,3 +2570,101 @@ button.cj-btn:focus {
     padding: 60px 5% 0;
 }
 
+
+
+/*
+========================================================================================================================
+*/
+
+.career-page-about .cj-container {
+    margin: auto;
+    padding: 100px 0 0;
+}
+
+.career-page-about .section-header {
+    margin: 0 5%;
+}
+
+.career-page-about-wrapper {
+    padding: 60px 0 0 5%;
+}
+
+.career-page-about-wrapper img {
+    width: 100%;
+}
+
+.career-page-positions .cj-container {
+    margin: auto;
+    padding: 100px 0;
+}
+
+.career-page-positions .section-header {
+    margin: 0 5%;
+}
+
+.position-item {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.positions-wrapper {
+    padding: 40px 5% 0;
+}
+
+.position-title h3 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.position-location,
+.position-date,
+.position-department {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.career-page-core-values .cj-container {
+    margin: auto;
+    padding: 0 0 100px;
+}
+
+.career-page-core-values .section-header {
+    margin: 0 5%;
+}
+
+.core-value-item {
+    padding-top: 60px;
+}
+
+.core-value-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.core-value-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.core-value-image img {
+    width: auto;
+}
+
+.career-page-culture .cj-container {
+    margin: auto;
+    padding: 100px 0; 
+}
+
+.career-page-culture .section-header {
+    margin: 0 5%;
+}
+
+.culture-description-wrapper {
+    padding: 60px 5%; 
+}
