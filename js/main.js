@@ -386,6 +386,12 @@ $(function () {
         });
     });
 
+
+    $('.tild-effect').tilt({
+        glare: true,
+        maxGlare: .5
+    })
+
 });
 
 
