@@ -227,13 +227,13 @@ table {
 .page-title h1 {
     background-color: transparent;
     color: #fff;
-    font-size: 45px;
+    font-size: 50px;
     /*font-family: 'Helvetica Neue Cyr Bold';*/
     margin-left: 15px;
     margin-right: 5%;
     margin-bottom: 180px;
     padding-left: 3%;
-    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .page-titke-overlay {
@@ -2073,7 +2073,6 @@ p.partners-number-medium {
     display: block;
     font-size: 15px;
     color: #999;
-    margin-bottom: -12px;
 }
 
 .contact-form-inputs:nth-child(1) {
@@ -2139,7 +2138,7 @@ p.partners-number-medium {
 }
 
 .contact-form-textarea {
-    height: 110px;
+    height: 150px;
     cursor: text;
     white-space: pre-wrap;
     word-wrap: break-word;
