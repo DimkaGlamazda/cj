@@ -168,6 +168,15 @@ table {
 }
 
 
+
+.page-main-heading {
+    margin-bottom: 30px;
+    font-size: 28px;
+    height: 18px;
+    line-height: 20px;
+    text-align: center;
+}
+
 /*
 █████████████████████████████████████████████████████
 █────██────██────██───███████───██───██───██─████───█
@@ -2031,7 +2040,6 @@ p.partners-number-medium {
     margin: 0 5% 60px;
 }
 
-
 .contact-form-side-img-wrapper img {
     width: 100%;
 }
@@ -2041,13 +2049,13 @@ p.partners-number-medium {
 }
 
 .contact-form-wrapper {
-    padding: 0 5% 0 0;
+    padding: 0 10% 0;
 }
 
 .cj-form-group {
     padding: 0 0 5px;
     border-bottom: 2px solid #d9d9d9;
-    margin: 0 auto 65px;
+    margin: 0 auto 30px;
     position: relative;
 }
 
@@ -2056,9 +2064,12 @@ p.partners-number-medium {
 }
 
 .cj-form-label {
+    display: block;
     font-size: 15px;
     color: #999;
+    margin-bottom: -12px;
 }
+
 .contact-form-inputs:nth-child(1) {
     padding-right: 5%;
 }
@@ -2126,7 +2137,6 @@ p.partners-number-medium {
     cursor: text;
     white-space: pre-wrap;
     word-wrap: break-word;
-    height: 110px;
     padding: 0;
 }
 
@@ -2135,9 +2145,8 @@ p.partners-number-medium {
     outline: none;
 }
 
-
 .contact-form .cj-btn-container {
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 button.cj-btn{
@@ -2177,14 +2186,6 @@ button.cj-btn:focus {
     padding-bottom: 40px;
 }
 
-.about-description-main-text h2 {
-    margin-bottom: 30px;
-    font-size: 28px;
-    height: 18px;
-    line-height: 20px;
-    /*font-weight: 700;*/
-    text-align: center;
-}
 
 .about-description-main-text p {
     padding: 0 8%;
@@ -2317,14 +2318,6 @@ button.cj-btn:focus {
 
 }
 
-.services-description h2 {
-    margin-bottom: 30px;
-    font-size: 28px;
-    height: 18px;
-    line-height: 20px;
-    /*font-weight: 700;*/
-    text-align: center;
-}
 
 .services-description-text {
     overflow: hidden;
@@ -2504,3 +2497,67 @@ button.cj-btn:focus {
     line-height: 24px;
     font-size: 15px;
 }
+
+
+
+
+
+
+
+
+
+/*
+========================================================================================================================
+*/
+
+.partners-page-description .cj-container {
+    margin: auto;
+    padding: 100px 0;
+}
+
+.partners-page-description-wrapper {
+    padding: 0 5%;
+    line-height: 26px;
+    text-align: center;
+}
+
+.partners-page-picture-separator .cj-container {
+    margin: auto;
+}
+
+.partners-page-picture-separator img {
+    width: 100%;
+}
+
+.partners-page-partners .cj-container {
+    margin: auto;
+    padding: 100px 0;
+}
+.partners-page-partners .section-header {
+    margin: 0 5%;
+}
+
+.partners-list-wrapper {
+    padding: 60px 5% 0;
+}
+
+.partners-list-item {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.partners-page-wanted .cj-container {
+    margin: auto;
+    padding: 40px 0 100px;
+}
+
+.partners-page-wanted .section-header {
+    margin: 0 5%;
+}
+
+.partners-page-wanted-text-wrapper {
+    padding: 60px 5% 0;
+}
+
