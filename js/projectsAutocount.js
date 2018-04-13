@@ -23,7 +23,7 @@ $.cj.projectsAutocount = {
 
 			if(w_top >= e_top) 
 			{
-				$(this.fields).spincrement({duration : 3000, decimalPlaces : null, thousandSeparator : ' '});
+				$(this.fields).spincrement({duration : 3000, decimalPlaces : null, thousandSeparator : ''});
 				$.cj.projectsAutocount.flag = false;
 			}
 		}
