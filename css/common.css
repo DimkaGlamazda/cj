@@ -38,6 +38,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     background-color: #FAFAFA !important;
     font-family: 'Jaldi', sans-serif;
+
 }
 
 ol, ul {
@@ -2577,7 +2578,7 @@ button.cj-btn:focus {
 }
 
 .partners-page-wanted-text-wrapper {
-    padding: 60px 5% 0;
+    padding: 60px 5% 30px;
     font-size: 18px;
     text-align: center;
 }
@@ -2594,13 +2595,25 @@ button.cj-btn:focus {
     padding: 100px 0 0;
 }
 
-.career-page-about .section-header {
-    margin: 0 5%;
-}
-
 .career-page-about-wrapper {
     padding: 60px 0 0 5%;
     font-size: 18px;
+}
+
+
+.career-page-about-description-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+}
+
+.career-page-about-description-wrapper p {
+    text-align: justify;
+}
+
+.career-page-about-description-wrapper .section-header{
+    margin-bottom: 50px;
 }
 
 .career-page-about-wrapper img {
@@ -2674,6 +2687,7 @@ button.cj-btn:focus {
 
 .core-value-image img {
     width: auto;
+    height: 140px;
 }
 
 .career-page-culture .cj-container {
@@ -2688,4 +2702,48 @@ button.cj-btn:focus {
 .culture-description-wrapper {
     padding: 60px 5%; 
     font-size: 18px;
+}
+
+/*
+============================================================================================
+*/
+
+.news-page-categories .cj-container {
+    margin: auto;
+    padding-top: 100px;
+}
+
+.categories-select-wrapper {
+    padding: 0 5%;
+}
+
+.newa-page-news-list .cj-container {
+    margin: auto;
+    padding: 100px 0;
+    height: auto;
+}
+
+.news-list {
+    padding: 0 5%;
+    height: auto;
+}
+
+
+.news-list-item {
+    padding: 30px 5px;
+    border-bottom: #e1dede solid 1px;
+    cursor: pointer;
+    height: auto;
+}
+
+.categories-full-description {
+    padding: 30px 0 0 0;
+    overflow: hidden;
+    display: none;
+}
+
+.categories-full-description img {
+    float: left;
+    width: 20%;
+    margin: 5px 10px 10px 0;
 }
